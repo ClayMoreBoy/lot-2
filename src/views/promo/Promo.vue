@@ -38,5 +38,5 @@
 </script>
 
 <style lang="scss">
-	@import "~@/themes/promo/promo";
+	@import "~themes/promo/promo";
 </style>
