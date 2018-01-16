@@ -30,14 +30,3 @@
 
 //箭头：
 .pub_arrow{border:1px solid #999;border-width:0px 1px 1px 0;transform: rotate(-45deg);display:inline-block;width:13px;height:13px;}
-
-.slide-left-enter, .slide-right-leave-active {
-  opacity: 0;
-  -webkit-transform: translate(100%, 0);
-  transform: translate(100%, 0);
-}
-.slide-left-leave-active, .slide-right-enter {
-  opacity: 0;
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-}
