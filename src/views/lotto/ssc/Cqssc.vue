@@ -26,5 +26,5 @@ export default {
 }
 </script>
 <style lang="scss">
-  @import '../../themes/lottery/lottery.scss';
+ @import '~themes/lotto/lottery';
 </style>
