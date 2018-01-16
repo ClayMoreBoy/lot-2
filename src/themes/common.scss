@@ -1,0 +1,43 @@
+// all pages style
+.vux-header.header{padding:2px 0 !important;    background:transparent linear-gradient(to right,#fc901c,#f64c01);
+	.vux-header-title{font-size: 17px !important;}
+	//头部返回箭头-w
+    .vux-header-left .left-arrow:before{border:1px solid #fff !important;border-width:1px 0 0 1px !important;}
+}
+.weui-tabbar.footer-bar{background-color: #fff !important;
+    .weui-tabbar__label{font-size: 12px !important;}
+    .weui-tabbar__icon{width: (51px) /2;height: (48px)/2;}
+    .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
+        color: #fa6200 !important;
+    }
+    &.weui-tabbar:before{
+    background: url(/static/cssImages/tabbarTopBg.png) repeat-x 0 0 / auto 8px !important;
+    height: 8px;
+    border-top: 0;
+    top: -4px;
+    }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+// global style
+.vux-pull-left{float: left !important;}
+.vux-pull-right{float: right !important;}
+
+//箭头：
+.pub_arrow{border:1px solid #999;border-width:0px 1px 1px 0;transform: rotate(-45deg);display:inline-block;width:13px;height:13px;}
+
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}

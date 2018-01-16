@@ -1,0 +1,13 @@
+// promo 
+
+ .promo-list{
+     img{width:100%;}
+     .tit{padding:0 20px 5px;color:#fa6200;border-bottom:5px solid #f2f2f2;font-size:17px;}
+     .tit span{display:block;font-size:12px;color:#666;}
+     .tit .pub_arrow{float:right;margin-top:15px;}
+     .weui-grid{padding:0;}
+     .weui-grid:after{border:none;}
+     .weui-grids:before{border:none;}
+    &.weui-grids:before{border:none;}
+    &.weui-grids:after{border:none;}
+ }
