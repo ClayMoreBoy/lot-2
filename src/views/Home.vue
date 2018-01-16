@@ -132,5 +132,5 @@ export default{
 </script>
 
 <style lang="scss">
-@import '../themes/home';
+@import '~themes/home';
 </style>
