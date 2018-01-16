@@ -1,0 +1,22 @@
+// help-style
+
+//平台声明：
+.announce-wrapper{
+    .content{color:#000;font-size:14px;
+      p{font-size:17px;}
+    }
+    .wrapper{top:55px;padding:0 15px;bottom:10px;}
+}
+.vux-header.header{position:relative;z-index:9;}
+
+.wrapper{position:absolute;top:44px;left:0;right:0;bottom:0px;}
+
+//玩法说明：
+.instruction-wrapper{
+  .list .tit{font-size:17px;color:#fa6200;height:44px;line-height:44px;text-align:center;border-bottom:1px solid #f2f2f2;}
+  .list .info{background:#f2f2f2;padding:10px;font-size:15px;color:#666666;}
+}
+
+
+
+
