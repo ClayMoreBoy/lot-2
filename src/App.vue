@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-		<transition name="slide-left">
-		  		<router-view></router-view>  	
-		</transition>
-  </div>	
+        <router-view></router-view>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      transitionName: 'slide-left'
-    }
-  }
+  name: 'app'
 }
 </script>
 
