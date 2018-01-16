@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
-import Promo from '@/views/Promo'
+import Promo from '@/views/promo/Promo'
 
 Vue.use(Router)
 
