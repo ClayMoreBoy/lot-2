@@ -75,12 +75,12 @@ const notice = [
 const lotteryRow = [
   {name: 'row1',
     data: [
-      {name: '时时彩', sName: 'ssc', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/ssc.png', lotterySubType: [{name: '重庆时时彩', link: '/lottery/cqssc'}, {name: '新疆时时彩', link: '/lottery/xjssc'}], noSubType: false},
+      {name: '时时彩', sName: 'ssc', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/ssc.png', lotterySubType: [{name: '重庆时时彩', link: '/lotto/cqssc'}, {name: '新疆时时彩', link: '/lotto/xjssc'}], noSubType: false},
       {name: 'PK拾', sName: 'pk10', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/pk10.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row2',
     data: [
-      {name: '快3', sName: 'k3', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/k3.png', lotterySubType: [{name: '江苏快3', link: '/lottery/jsk3'}, {name: '湖北快3', link: '/lottery/hbk3'}, {name: '广西快3', link: '/lottery/gxk3'}, {name: '安徽快3', link: '/lottery/ahk3'}], noSubType: false},
+      {name: '快3', sName: 'k3', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/k3.png', lotterySubType: [{name: '江苏快3', link: '/lotto/jsk3'}, {name: '湖北快3', link: '/lotto/hbk3'}, {name: '广西快3', link: '/lotto/gxk3'}, {name: '安徽快3', link: '/lotto/ahk3'}], noSubType: false},
       {name: '六合彩', sName: 'lhc', lotteryType: '低频彩', lotteryImg: '/static/images/lottery/lhc.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row3',
@@ -132,5 +132,5 @@ export default{
 </script>
 
 <style lang="scss">
-@import '~themes/home';
+@import '~themes/home.scss';
 </style>

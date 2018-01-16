@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
-import Promo from '@/views/Promo'
-import Cqssc from '@/views/lottery/Cqssc'
 import Promo from '@/views/promo/Promo'
+import Cqssc from '@/views/lotto/ssc/Cqssc'
 Vue.use(Router)
 
 export default new Router({
@@ -19,7 +18,7 @@ export default new Router({
       component: Promo
     },
     {
-      path: '/lottery/cqssc',
+      path: '/lotto/cqssc',
       name: 'Cqssc',
       component: Cqssc
     }
