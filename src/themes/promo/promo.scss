@@ -11,3 +11,17 @@
     &.weui-grids:before{border:none;}
     &.weui-grids:after{border:none;}
  }
+
+.promo-show-wrapper {
+    .container{border:1px solid #e2e2e2;border-radius:5px;height:100%;background:#fff;}
+    .cont-box{padding:13px;background:#f2f2f2;
+        .tit{height:60px;padding:10px;position: relative;border-bottom:1px solid #e2e2e2;
+            .icon-gift{float:left;display:inline-block;width:25px;height:25px;background:url(/static/cssImages/gift.png) center no-repeat;background-size:25px;position: absolute;top:10px;left:10px;}
+            h1{font-size:19px;color:#333;text-align: center;padding-bottom:5px;}
+            span{color:#fa6200;font-size:13px;}
+        }
+        .cont{}
+        
+    }    
+    
+}
