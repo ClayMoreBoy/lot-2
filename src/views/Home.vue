@@ -25,7 +25,7 @@
 				<!--彩种列表-->
 				<div class="lottery-list">
 					<template v-for="row in lotteryRow">
-						<home-lottery-row :scrollInit="scrollInit" :data="row.data"></home-lottery-row>	
+						<home-lottery-row :scrollInit="scrollInit" :data="row.data"></home-lottery-row>
 					</template>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 				<img slot="icon-active" src="/static/images/lottery/icon-mine-active.png"/>
 			</tabbar-item>
 		</tabbar>
-	</div>		
+	</div>
 </template>
 
 <script>
@@ -75,12 +75,12 @@ const notice = [
 const lotteryRow = [
   {name: 'row1',
     data: [
-      {name: '时时彩', sName: 'ssc', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/ssc.png', lotterySubType: ['重庆时时彩', '新疆时时彩'], noSubType: false},
+      {name: '时时彩', sName: 'ssc', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/ssc.png', lotterySubType: [{name: '重庆时时彩', link: '/lottery/cqssc'}, {name: '新疆时时彩', link: '/lottery/xjssc'}], noSubType: false},
       {name: 'PK拾', sName: 'pk10', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/pk10.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row2',
     data: [
-      {name: '快3', sName: 'k3', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/k3.png', lotterySubType: ['江苏快3', '湖北快3', '广西快3', '安徽快3'], noSubType: false},
+      {name: '快3', sName: 'k3', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/k3.png', lotterySubType: [{name: '江苏快3', link: '/lottery/jsk3'}, {name: '湖北快3', link: '/lottery/hbk3'}, {name: '广西快3', link: '/lottery/gxk3'}, {name: '安徽快3', link: '/lottery/ahk3'}], noSubType: false},
       {name: '六合彩', sName: 'lhc', lotteryType: '低频彩', lotteryImg: '/static/images/lottery/lhc.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row3',

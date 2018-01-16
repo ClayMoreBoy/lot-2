@@ -9,8 +9,8 @@
 							<img :src="d.lotteryImg"/>
 						</div>
 						<div class="l_txt"><span class="nam">{{d.name}}</span><span class="l_t">{{d.lotteryType}}</span></div>
-					</a>					
-				</template>						
+					</a>
+				</template>
 			</div>
 			<div class="lottery-dropdown-wrap">
 				<template v-for="d in data">
@@ -19,12 +19,12 @@
 							<div class="lottery-detail-item-wrap">
 								<template v-for="cz in d.lotterySubType">
 									<div class="lottery-detail-item">
-										<a href="">{{cz}}</a>
-									</div>										
+                    <router-link :to="cz.link">{{cz.name}}</router-link>
+									</div>
 								</template>
 							</div>
-						</div>								
-					</transition>					
+						</div>
+					</transition>
 				</template>
 			</div>
 		</div>
