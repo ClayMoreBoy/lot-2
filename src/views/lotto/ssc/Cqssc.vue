@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-import {XHeader,Popup, Tab, TabItem} from 'vux'
+import {XHeader, Popup, Tab, TabItem} from 'vux'
 import BScroll from 'better-scroll'
 import $ from 'jquery'
 export default {
@@ -50,7 +50,7 @@ export default {
   mounted () {
     this.$nextTick(() => {
       this.scroll = new BScroll(this.$refs.bteTypePopupWrapper, {})
-  })
+    })
   }
 }
 </script>
