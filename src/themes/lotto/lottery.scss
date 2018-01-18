@@ -1,4 +1,9 @@
 // lottery style
+// 头部颜色
+$topLinkColor:#fff;
+// 主题色
+$themeColor:#fc6b0d;
+$betInfoBg:rgba(229,229,229,0.9);
 *{box-sizing: border-box;}
 .header{
   .xiaozhushou{    position: absolute;
@@ -8,7 +13,7 @@
     font-size: 12px;
     line-height: 1.4;
     width: 40px;
-    .icon-xiaozhushou{background: url("/static/cssImages/icon-xiaozhushou.png") center/100%;display: block;width: 22px;height: 22px;margin: 4px auto 0;}
+    .icon-xiaozhushou{background: url("/static/cssImages/ssc/icon-xiaozhushou.png") center/100%;display: block;width: 22px;height: 22px;margin: 4px auto 0;}
     .vux-popover{left: auto !important;right:0;}
     .popContent{width: (320px)/2;height: (1010px)/2;
     }
@@ -25,23 +30,24 @@
     .vux-popover{background-color: #fff;color: #666;font-size: 17px;border-radius: 5px;box-shadow: 0 3.5px 2.5px rgba(0,0,0,0.38);}
   }
 }
+// 头部下拉
 .topDropdown {
   width: (323px) /2;
   height: (70px) /2;
-  border: 1px solid #fff;
+  border: 1px solid $topLinkColor;
   margin: 2px auto 0;
   border-radius: 5px;
   line-height: 35px;
   font-size: 14px;
-  color: #fff;
+  color: $topLinkColor;
   position: relative;
-  .betType{font-size: (34px)/2;color: #fa6200;background: #fff;border-radius: 3px;display: inline-block;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 10px;vertical-align: text-bottom; }
+  .betType{font-size: (34px)/2;color: #fa6200;background: $topLinkColor;border-radius: 3px;display: inline-block;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 10px;vertical-align: text-bottom; }
   .t1{margin-right: 5px;}
   &:after{    content: '';
     width: 6px;
     height: 6px;
-    border-left: 1px solid #fff;
-    border-top: 1px solid #fff;
+    border-left: 1px solid $topLinkColor;
+    border-top: 1px solid $topLinkColor;
     position: absolute;
     transform: rotateZ(-135deg);
     right: 6px;
@@ -95,24 +101,13 @@
     }
   }
 }
+// 投注区域头部
 .bet-top{
-  background: url(/static/cssImages/betHeaderbg.jpg) no-repeat center /cover;padding: 10px;display: flex;font-size: 14px;color: #fff;height: 120px;
+  background: url(/static/cssImages/ssc/betHeaderbg.jpg) no-repeat center /cover;padding: 10px;display: flex;font-size: 14px;color: #fff;height: 120px;
   .left-p{width: (480px)/2;
     .qishu{margin-bottom: 14px;
       .l-name{margin-right: 5px;}
-      .icon-ques1{background: url("/static/cssImages/icon-ques1.png") center/100%;width: 15px;  height:15px;display: inline-block;vertical-align: -2px;        margin-left: 6px;}
-    }
-    .bet-num{
-      span{width: (89px)/2;height: (88px)/2;display: inline-block;font-size: 0;vertical-align: top;margin-left: -3px;      margin-right: 3px;}
-      .ssc_n1{background: url("/static/cssImages/ssc-num1.png") center /100%;}
-      .ssc_n2{background: url("/static/cssImages/ssc-num2.png") center /100%;}
-      .ssc_n3{background: url("/static/cssImages/ssc-num3.png") center /100%;}
-      .ssc_n4{background: url("/static/cssImages/ssc-num4.png") center /100%;}
-      .ssc_n5{background: url("/static/cssImages/ssc-num5.png") center /100%;}
-      .ssc_n6{background: url("/static/cssImages/ssc-num6.png") center /100%;}
-      .ssc_n7{background: url("/static/cssImages/ssc-num7.png") center /100%;}
-      .ssc_n8{background: url("/static/cssImages/ssc-num8.png") center /100%;}
-      .ssc_n9{background: url("/static/cssImages/ssc-num9.png") center /100%;}
+      .icon-ques1{background: url("/static/cssImages/ssc/icon-ques1.png") center/100%;width: 15px;  height:15px;display: inline-block;vertical-align: -2px;        margin-left: 6px;}
     }
   }
   .right-p{flex: 1;width: (230px)/2;text-align: center;
@@ -121,22 +116,23 @@
     }
     .count-down{margin-top: 10px;font-size: 0;
       span{vertical-align: top;width: (28px)/2;height: (43px)/2;display: inline-block;margin: 0 5px;font-size: 0;
-        &.cd_n1{background: url("/static/cssImages/count-down-1.png") no-repeat center / (7px/2);}
-        &.cd_n2{background: url("/static/cssImages/count-down-2.png") no-repeat center / (27px/2);}
-        &.cd_n3{background: url("/static/cssImages/count-down-3.png") no-repeat center / (26px/2);}
-        &.cd_n4{background: url("/static/cssImages/count-down-4.png") no-repeat center / (27px/2);}
-        &.cd_n5{background: url("/static/cssImages/count-down-5.png") no-repeat center / (27px/2);}
-        &.cd_n6{background: url("/static/cssImages/count-down-6.png") no-repeat center / (27px/2);}
-        &.cd_n7{background: url("/static/cssImages/count-down-7.png") no-repeat center / (25px/2);}
-        &.cd_n8{background: url("/static/cssImages/count-down-8.png") no-repeat center / (27px/2);}
-        &.cd_n9{background: url("/static/cssImages/count-down-9.png") no-repeat center / (26px/2);}
-        &.cd_n0{background: url("/static/cssImages/count-down-0.png") no-repeat center / (27px/2);}
-        &.cd_dot{background: url("/static/cssImages/count-down-dot.png") no-repeat center / 3.5px;width: 3.5px;}
+        &.cd_n1{background: url("/static/cssImages/ssc/count-down-1.png") no-repeat center / (7px/2);}
+        &.cd_n2{background: url("/static/cssImages/ssc/count-down-2.png") no-repeat center / (27px/2);}
+        &.cd_n3{background: url("/static/cssImages/ssc/count-down-3.png") no-repeat center / (26px/2);}
+        &.cd_n4{background: url("/static/cssImages/ssc/count-down-4.png") no-repeat center / (27px/2);}
+        &.cd_n5{background: url("/static/cssImages/ssc/count-down-5.png") no-repeat center / (27px/2);}
+        &.cd_n6{background: url("/static/cssImages/ssc/count-down-6.png") no-repeat center / (27px/2);}
+        &.cd_n7{background: url("/static/cssImages/ssc/count-down-7.png") no-repeat center / (25px/2);}
+        &.cd_n8{background: url("/static/cssImages/ssc/count-down-8.png") no-repeat center / (27px/2);}
+        &.cd_n9{background: url("/static/cssImages/ssc/count-down-9.png") no-repeat center / (26px/2);}
+        &.cd_n0{background: url("/static/cssImages/ssc/count-down-0.png") no-repeat center / (27px/2);}
+        &.cd_dot{background: url("/static/cssImages/ssc/count-down-dot.png") no-repeat center / 3.5px;width: 3.5px;}
       }
     }
   }
 }
-.bet-record-switch{height: 22px;background: url("/static/cssImages/bet-result-close-bg.png") no-repeat center bottom/100% (21px/2);position: relative;    margin-top: -22px;
+// 开奖记录
+.bet-record-switch{height: 22px;background: url("/static/cssImages/ssc/bet-result-close-bg.png") no-repeat center bottom/100% (21px/2);position: relative;    margin-top: -22px;    margin-bottom: 5px;
   .arrow{    width: 6px;
     height: 6px;
     border-left: 1px solid #fff;
@@ -150,7 +146,8 @@
     .arrow{border-color: #999;transform: rotateZ(135deg);}
   }
   &.active{
-    background: url("/static/cssImages/bet-result-open-bg.png") no-repeat center bottom/100% (21px/2);  margin-top: 0;
+    background: url("/static/cssImages/ssc/bet-result-open-bg.png") no-repeat center bottom/100% (21px/2);  margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 .bet-record{
@@ -158,5 +155,53 @@
   .wrapper{position: absolute;top: 0;left: 0;right: 0;bottom: 0;overflow: hidden;}
   &.active{
     height: (374px/2);
+  }
+}
+.betRecordTable{font-size: 14px;color: #333;
+  &.vux-table{line-height: 35px;
+    .dot-line{position: absolute;    height: 100%;    width: 1px;    background: #999;   right: 0;
+      &:before{content: '';width: 7px;height: 7px;background: #999;border-radius: 50%;position: absolute;right: -3px;top: 50%;margin-top: -3.5px;}
+    }
+    td.le-2{letter-spacing: 2px;}
+  }
+  &.vux-table td:before, &.vux-table th:before{    border-bottom: 1px solid #e2e2e2;}
+  &.vux-table.vux-table-no-content-bordered tr:last-child td:before{border-bottom-width: 0;}
+  .theme-color{color:$themeColor;}
+}
+.table-tips{font-size: 14px;color: #333;text-align: center;}
+
+// 冷热遗漏区
+.bet-data-switch-tab{
+  height: 41px;
+  .wallet{float: left;background: url('/static/cssImages/ssc/icon-wallet.png') no-repeat 10px center/23px;padding-left: 42px;font-size: 14px;color: #999;height: 30px;line-height: 30px;}
+  .data-switch-tab{float: right;color: #999;padding-right: 10px;font-size: 0;    height: auto;    display: block;
+    .tab-btn{font-size:14px;position:relative;display: inline-block;vertical-align: top;flex:none;height: (49px/2);width: auto;      background: transparent;line-height: (49px/2);padding: 0 8px;border: 1px solid #e3e3e3 !important;border-radius: (49px/4);
+      &+.tab-btn{margin-left: 10px;}
+      &.cur{
+        color: $themeColor;border-color: $themeColor;
+        &:before{content: '';height: (9px/2);width: (14px/2);border-left: 1px solid $themeColor;border-bottom: 1px solid $themeColor;display: inline-block;vertical-align: top;    transform: rotateZ(-45deg);         margin-top: 7px;          margin-right: 5px;}
+      }
+    }
+    .vux-tab-ink-bar{display: none !important;}
+    .btn-random{background: url("/static/cssImages/lotto/icon-random.png") center / 100%;width: 35px;height: 35px;display: inline-block;vertical-align: top;    margin: -6px 0 0 5px;}
+  }
+}
+// 玩法说明
+.bet-help{font-size: 14px;color: #666;padding: 0 10px;    margin-bottom: 5px;
+  .icon-bet-help{background: url("/static/cssImages/lotto/icon-ques2.png") center /100%;width: 15px;height: 15px;display: inline-block;vertical-align: top;margin: 3px 0 0 5px;}
+}
+// 底部投注区域
+.lottery-bet1-footer{
+  height: 49px;position: absolute;bottom: 0;left: 0;right: 0;box-shadow: 0 0 4px rgba(0,0,0,0.38);    z-index: 3;
+  .btn-random{width: (110px/2);height: (70px/2);display: inline-block;vertical-align: top;margin-left: 10px;margin-top: 7px;border: 1px solid #666;border-radius: 5px;text-align: center;line-height: 33px;color: #333;font-size: (34px/2);}
+  .middle-w{display: inline-block;vertical-align: top;}
+  .bet-money{background: url("/static/cssImages/lotto/icon-money-bg.png") no-repeat center/100%;width: 35px;height: 35px;margin-left: 33px;margin-top: 7px;display: inline-block;vertical-align: top;line-height: 35px;text-align: center;font-size: 16px;color: $themeColor;}
+  .bet-times{width: 90px;   height:35px;font-size: 16px;color: #333;text-align: center;line-height: 33px;border: 1px solid #d5d5d5;border-radius: 5px;margin-top: 7px;margin-left: 8px;}
+  .t-times{font-size: 17px;color: #333;line-height: 49px;display: inline-block;vertical-align: top;margin-left: 6px;}
+  .btn-bet{float: right;width: 100px;height: 49px;background: $themeColor;color: $topLinkColor;font-size: 17px;text-align: center;line-height: 49px;
+    &.disabled{background: lighten($themeColor,10%)}
+  }
+  .bet-info{position: absolute;  bottom: 49px;    text-align: center;    left: 0;    right: 0;background: $betInfoBg;font-size: 13px;color: #333;padding: 5px 0;display: none;
+    &.show{display: block;}
   }
 }

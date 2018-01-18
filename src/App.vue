@@ -12,6 +12,8 @@ export default {
 
 <style lang="less">
 @import '~vux/src/styles/reset.less';
-@import './themes/base.scss';
-@import './themes/common.scss';
+</style>
+<style lang="scss">
+  @import './themes/base.scss';
+  @import './themes/common.scss';
 </style>
