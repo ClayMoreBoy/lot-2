@@ -66,7 +66,7 @@ $betInfoBg:rgba(229,229,229,0.9);
   }
   &.vux-tab .vux-tab-item{
     &.betTypeTabItem{
-      height:35px;width: (255px)/2;flex: none;display: inline-block;line-height: 35px;border-radius: 8px;border: 1px solid #999 !important;background: #fff;
+      height:35px;width: (255px)/2; display: inline-block;line-height: 35px;border-radius: 8px;border: 1px solid #999 !important;background: #fff;
       &.vux-tab-selected{background: linear-gradient(to right,#fb8819,#f75404);border: 1px solid transparent !important;color: #fff;position: relative;
         .icon-check{width: 17px;     height: 17px;
           border-radius: 50%;
