@@ -1,0 +1,56 @@
+//Confirm_bets 确认投注：
+$orange: #fa6200;
+*{box-sizing:border-box}
+ul,li{list-style:none;}
+.confirm-wrapper{
+  .header{position:relative;z-index:9;}
+  .wrapper{position:absolute;top:44px;left:0;right:0;bottom:145px;}
+  .time{text-align:center;font-size:17px;color:#666;line-height:45px;height:45px;
+    font{color:$orange;}
+  }
+  .tit{height:45px;background:#f2f2f2;padding:0 10px;
+      .close{width:95px;height:30px;line-height:30px;border-radius:5px;border:1px solid #999;background:#fff;float:left;margin-top:8px;color:#666;}
+      .purse{background:url(/static/cssImages/purse-org.png) left center no-repeat;background-size:23px; display:inline-block;float:right;line-height:45px;color:#999;padding:0 30px;}
+  }
+  .list-box li{ height:85px;border-bottom:5px solid #f2f2f2;overflow:hidden;
+      .left{width:13%;position:relative;float:left;height:100%;
+          &:before{content:'\2716';color:#9b9b9b;font-size:16px;width:25px;height:25px;border-radius:100%;border:1px solid #e2e2e2;
+          display:inline-block;text-align:center;line-height:25px;position:absolute;left:11px;top:50%;margin-top:-13px;}
+      }
+      .center{width:34%;height:100%; float:left;padding:7px 0;text-align:left;font-size:17px;line-height:22px;
+          span{color:#666;}
+          p{color:$orange;font-weight:bold;word-break:break-all;word-wrap:break-word}
+      }
+      .right{width:50%;height:100%;float:right;text-align:right;font-size:14px;color:#666;padding:12px 15px 0 0;line-height:30px;
+          input{display:inline-block;height:25px;width:70px;border:1px solid #999;background:#f2f2f2;border-radius:3px;margin: 0 3px;text-align:center;}
+          .num{fong-size:12px;color:#999;}
+      }
+  }
+  .footer{height:145px;position:absolute;bottom:0;left:0;right:0;margin:auto;background:#fff;box-shadow:1px -3px 5px #dbdbdb;text-align:center;
+    .p{height:35px;line-height:35px;color:#666;font-size:14px;text-align:center;}
+    .p-1{background:#f2f2f2;}
+    .link{display:inline-block;text-align:center;line-height: 36px;box-shadow:0 6px 3px #f6f6f6; width: 150px;border-radius:20px; height: 40px;border:none;
+        color:$orange;font-size:17px;margin-top:15px;background:linear-gradient(to right,#fb8919,#f75404);color:#fff;box-shadow:0 6px 3px #fddbcc;
+    }
+  }
+
+}
+
+//Confirm_bets_2:
+.confirm-wrapper-2{
+    .tit .random{width:95px;height:30px;line-height:32px;border-radius:5px;background:linear-gradient(to right,#fb8618,#f75705);border:none;margin:8px 0 0 8px;color:#fff;}
+    .list-box li { height: 125px;
+        .center{width:50%;padding:10px 0;
+            .num{line-height:25px;}
+            font{font-size:14px;color:#999;line-height:25px;display:block;}
+        }
+        .right{width:35%;
+          p{margin-bottom:5px;}
+          .follow{width:70px;height:25px;line-height:25px;color:#fff;text-align:center;border-radius:3px;background:linear-gradient(to right,#fb8618,#f75705);border:none;margin-right:17px;}
+        }
+
+    }
+  }
+
+
+

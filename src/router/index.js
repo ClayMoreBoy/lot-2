@@ -35,6 +35,42 @@ export default new Router({
           component: CqsscX
         }
       ]
+      component: Cqssc
+    },
+    {
+      path: '/promo/promo_show',
+      name: 'PromoShow',
+      component: PromoShow
+    },
+    {
+      path: '/help/Announce',
+      name: 'Announce',
+      component: Announce
+    },
+    {
+      path: '/help/Instruction',
+      name: 'Instruction',
+      component: Instruction
+    },
+    {
+      path: '/lotto/result',
+      name: 'Result',
+      component: Result
+    },
+    {
+      path: '/trend/trend',
+      name: 'Trend',
+      component: Trend
+    },
+    {
+      path: '/lotto/confirm_bets',
+      name: 'Confirm_bets',
+      component: Confirm_bets
+    },
+    {
+      path: '/lotto/confirm_bets_2',
+      name: 'Confirm_bets_2',
+      component: Confirm_bets_2
     }
   ]
 })

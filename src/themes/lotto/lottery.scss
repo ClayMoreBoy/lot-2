@@ -265,3 +265,63 @@ $betInfoBg:rgba(229,229,229,0.9);
     &.checked{background: url("/static/cssImages/lotto/icon-radio-checked.png") no-repeat 0 / #{(38px/2)};}
   }
 }
+
+//投注结果：
+$orange: #fa6200;
+.result-wrapper{height:100%;background:#f2f2f2;
+  .header{position:relative;z-index:9;
+    .purse{position:absolute;right:20px;top:2px;font-size:12px;text-align:center;line-height:16px;
+      i{display:block;width:23px;height:24px;background:url(/static/cssImages/purse.png) center bottom no-repeat;background-size:21px;}
+      p{position:absolute;width:135px;height:45px;border-radius:5px;right:-10px;top:53px;background:#fff;box-shadow:0 2px 7px 0 #bebcbc;
+        color:$orange;font-size:17px;line-height:45px;text-indent:10px;text-align:left;display:none;
+        &:before{content:"";width:10px;height:10px;transform:rotate(45deg);background:#fff;position:absolute;top:-5px;right:16px;box-shadow:0 1px 5px 0 #bebcbc;}
+        &:after{content:"";width:20px;height:10px;background:#fff;position:absolute;top:0px;right:9px;}
+      }
+    }
+  }
+  .wrapper{
+      position:absolute;bottom:120px;left:0;right:0;top:57px;margin: 0 15px;background:#fff;border-radius:8px;overflow:hidden;
+      .content{height:1000px;background:none;
+        .shadow{height:12px;background:linear-gradient(#959595,#fff);position:absolute;top:0;left:0;right:0;margin:auto;z-index:11;border:1px solid #a5a5a5;border-bottom:none;}
+        .list{height:230px;position:relative;background:url(/static/cssImages/result-lotte-b.png) bottom center no-repeat;background-size:100%;border-left:1px solid #a5a5a5;border-right:1px solid #a5a5a5;
+            h2.tit{font-weight:normal;font-size:15px;color:#e21d1d;text-align:center;line-height:16px;padding-top:18px;position:relative;height:65px;background:url(/static/cssImages/result-lotte-bg.png) top center no-repeat;background-size:100% 100%;
+                span{display:block;font-size:12px;}
+                i.pu{background:url(/static/cssImages/pu.png) center no-repeat;width:57px;height:53px;background-size:55px;display:inline-block;position:absolute;left:25px;top:12px;}
+            }
+            .cont{padding:0 15px;
+                .hui{font-size:12px;color:#999;line-height:20px;}
+                .time{height:32px;line-height:30px;
+                    span{float:right;}
+                }
+                .name{color:#e21d1d;font-size:17px;font-weight:bold;text-indent:1.5em;padding:3px 0;
+                    span{float:right;width:75px;height:25px;line-height:23px;color:#999;text-align:center;font-weight:normal;display:inline-block;border:1px solid #999;border-radius:5px;text-indent:0;}
+                }
+                .price{font-size:14px;color:#333;line-height:24px;padding:0 0 5px 10px;}
+            }
+        }
+        .list:before{position:absolute;bottom:-4px;left:-1px;height:8px;width:1px;background:#f2f2f2;display:block;content:"";z-index:20;}
+        .list:after{position:absolute;bottom:-4px;right:-1px;height:8px;width:1px;background:#f2f2f2;display:block;content:"";z-index:20}
+      }
+  }
+  .footer{height:100px;position:absolute;bottom:0;left:0;right:0;margin:auto;background:#fff;box-shadow:1px -3px 5px #dbdbdb;text-align:center;
+    .info{background:#f2f2f2;height:25px;line-height:25px;color:#666;padding:0 15px;font-size:14px;text-align:left;
+      span{float:right;}
+    }
+    .link{
+      border: 1px solid rgb(226, 226, 226);display:inline-block;text-align:center;line-height: 36px;box-shadow:0 6px 3px #f6f6f6;
+      width: 150px;border-radius:20px; height: 40px;color:$orange;font-size:17px;margin:15px 0 15px 15px;float:left;
+      &.link-2{float:right;margin-right:15px;margin-left:0;background:linear-gradient(to right,#fb8919,#f75404);color:#fff;box-shadow:0 6px 3px #fddbcc;}
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,10 @@
-// promo 
+// promo
+$orange: #fa6200;
+
 .promo-wrapper{
      .promo-list{
          img{width:100%;}
-         .tit{padding:0 20px 5px;color:#fa6200;border-bottom:5px solid #f2f2f2;font-size:17px;}
+         .tit{padding:0 20px 5px;color:$orange;border-bottom:5px solid #f2f2f2;font-size:17px;}
          .tit span{display:block;font-size:12px;color:#666;}
          .tit .pub_arrow{float:right;margin-top:15px;}
          .weui-grid{padding:0;}
@@ -15,7 +17,7 @@
 
 .vux-header.header{z-index: 9;position:relative;}
 
-.wrapper{position:absolute;top:44px;bottom:0px;left:0;right:0;}    
+.wrapper{position:absolute;top:44px;bottom:0px;left:0;right:0;}
 //优惠活动详情：
 .promo-show-wrapper {
     .container{border:1px solid #e2e2e2;border-radius:5px;height:auto;background:#fff;}
@@ -23,7 +25,7 @@
         .tit{height:60px;padding:10px;position: relative;border-bottom:1px solid #e2e2e2;
             .icon-gift{float:left;display:inline-block;width:25px;height:25px;background:url(/static/cssImages/gift.png) center no-repeat;background-size:25px;position: absolute;top:10px;left:10px;}
             h1{font-size:19px;color:#333;text-align: center;padding-bottom:5px;}
-            span{color:#fa6200;font-size:13px;}
+            span{color:$orange;font-size:13px;}
         }
         .cont{font-size:13px;padding:10px;line-height: 22px;}
         .cont p{font-family: "黑体";}
