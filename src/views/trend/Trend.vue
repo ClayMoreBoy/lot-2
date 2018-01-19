@@ -16,7 +16,7 @@
               <flexbox-item :span="4"><p>开奖结果</p></flexbox-item>
               <flexbox-item :span="5"><p>五星形态</p></flexbox-item>
             </flexbox>
-            <flexbox class='list' v-for='info in result'>
+            <flexbox class='list' v-for='(info,index) in result' :key='index'>
               <flexbox-item :span="3"><p class='iss'>{{info.iss}}</p></flexbox-item>
               <flexbox-item :span="4"><p>{{info.num}}</p></flexbox-item>
               <flexbox-item :span="5"><p>{{info.star}}</p></flexbox-item>
@@ -65,10 +65,10 @@
     import { XHeader, FlexboxItem, Flexbox, Cell, CellBox, CellFormPreview, Group, Checker, CheckerItem, Scroller } from 'vux'
     import BScroll from 'better-scroll'
     const result = [
-      {iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-      {iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-      {iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-      {iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'}
+      {key: '1', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
+      {key: '2', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
+      {key: '3', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
+      {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'}
     ]
     const list2 = [
       {key: '1', tit: '总和-单双', cont: '111'},

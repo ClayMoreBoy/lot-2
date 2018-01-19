@@ -5,13 +5,13 @@ import Promo from '@/views/promo/Promo'
 import Cqssc from '@/views/lotto/ssc/cqssc/index'
 import CqsscG from '@/views/lotto/ssc/cqssc/guan/index'
 import CqsscX from '@/views/lotto/ssc/cqssc/xin/index'
-import PromoShow from '@/views/promo/promo_show'
+import PromoShow from '@/views/promo/PromoShow'
 import Announce from '@/views/help/Announce'
 import Instruction from '@/views/help/Instruction'
-import Result from '@/views/lotto/result'
-import Trend from '@/views/trend/trend'
-import Confirm_bets from '@/views/lotto/ssc/confirm_bets'
-import Confirm_bets_2 from '@/views/lotto/ssc/confirm_bets_2'
+import Result from '@/views/lotto/Result'
+import Trend from '@/views/trend/Trend'
+import ConfirmBets from '@/views/lotto/ssc/ConfirmBets'
+import ConfirmBets2 from '@/views/lotto/ssc/ConfirmBets2'
 Vue.use(Router)
 
 export default new Router({
@@ -44,7 +44,7 @@ export default new Router({
       ]
     },
     {
-      path: '/promo/promo_show',
+      path: '/promo/PromoShow',
       name: 'PromoShow',
       component: PromoShow
     },
@@ -59,24 +59,24 @@ export default new Router({
       component: Instruction
     },
     {
-      path: '/lotto/result',
+      path: '/lotto/Result',
       name: 'Result',
       component: Result
     },
     {
-      path: '/trend/trend',
+      path: '/trend/Trend',
       name: 'Trend',
       component: Trend
     },
     {
-      path: '/lotto/confirm_bets',
-      name: 'Confirm_bets',
-      component: Confirm_bets
+      path: '/lotto/ConfirmBets',
+      name: 'ConfirmBets',
+      component: ConfirmBets
     },
     {
-      path: '/lotto/confirm_bets_2',
-      name: 'Confirm_bets_2',
-      component: Confirm_bets_2
+      path: '/lotto/ConfirmBets2',
+      name: 'ConfirmBets2',
+      component: ConfirmBets2
     }
   ]
 })
