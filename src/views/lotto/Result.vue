@@ -38,6 +38,7 @@
     import $ from 'jquery'
     const relList = [
       {title: '重庆时时彩', Etitle: 'chongqingshishicai'},
+      {title: '重庆时时彩', Etitle: 'chongqingshishicai'},
       {title: '重庆时时彩', Etitle: 'chongqingshishicai'}
     ]
 export default{
