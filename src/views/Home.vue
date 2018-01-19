@@ -75,7 +75,25 @@ const notice = [
 const lotteryRow = [
   {name: 'row1',
     data: [
-      {name: '时时彩', sName: 'ssc', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/ssc.png', lotterySubType: [{name: '重庆时时彩', link: '/lotto/cqssc'}, {name: '新疆时时彩', link: '/lotto/xjssc'}], noSubType: false},
+      {
+        name: '时时彩',
+        sName: 'ssc',
+        lotteryType: '高频彩',
+        lotteryImg: '/static/images/lottery/ssc.png',
+        lotterySubType: [
+        {name: '重庆时时彩(官)', link: '/lotto/cqssc/guan'},
+        {name: '重庆时时彩(信)', link: '/lotto/cqssc/xin'},
+        {name: '新疆时时彩(官)', link: '/lotto/xjssc'},
+        {name: '新疆时时彩(信)', link: '/lotto/xjssc'},
+        {name: '分分时时彩(信)', link: '/lotto/xjssc'},
+        {name: '二分时时彩(信)', link: '/lotto/xjssc'},
+        {name: '天津时时彩(官)', link: '/lotto/xjssc'},
+        {name: '天津时时彩(信)', link: '/lotto/xjssc'},
+        {name: '三分时时彩(信)', link: '/lotto/xjssc'},
+        {name: '五分时时彩(信)', link: '/lotto/xjssc'}
+        ],
+        noSubType: false
+      },
       {name: 'PK拾', sName: 'pk10', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/pk10.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row2',

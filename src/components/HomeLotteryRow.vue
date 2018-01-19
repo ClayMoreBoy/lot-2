@@ -14,7 +14,7 @@
 			</div>
 			<div class="lottery-dropdown-wrap">
 				<template v-for="d in data">
-					<transition name="">
+					<transition name="fade">
 						<div class="lottery-dropdown-list" v-if="lotteryType[d.sName].value">
 							<div class="lottery-detail-item-wrap">
 								<template v-for="cz in d.lotterySubType">
@@ -92,5 +92,5 @@ export default{
 }
 </script>
 
-<style>
+<style lang="scss">
 </style>

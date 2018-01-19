@@ -2,7 +2,7 @@
   <div>
     <x-header class="header" :left-options="{backText:''}">
       <div slot="default" class="topDropdown" @click="showDropdown">
-        <span class="betType">官</span><span class="t1">五星</span><span class="t2">直选复式</span>
+        <span class="betType">官</span><span class="t1">定位胆</span><!--<span class="t2">直选复式</span>-->
       </div>
       <div class="xiaozhushou" slot="right">
         <popover placement="bottom" style="position: relative;">
@@ -263,12 +263,11 @@
           <div class="betTypeTabContent">
             <div class="bttc active">
                 <div class="betType">
-                  <div class="betBigType">五星(官方玩法)</div>
+                  <div class="betBigType">定位胆</div>
                     <div class="betExtType">
-                      <div class="betTit">五星直选</div>
+                      <div class="betTit">定位胆</div>
                       <div class="betExt">
-                        <router-link class="cur"  to="/">单式</router-link>
-                        <router-link  to="/">复式</router-link>
+                        <router-link class="cur"  to="/">定位胆</router-link>
                       </div>
                     </div>
                   <div class="betExtType">
@@ -323,12 +322,12 @@
       </div>
     </my-dialog>
     <!--圆角分设置弹窗-->
-    <my-dialog :isShow="yuanjiaoDialogShow" @on-result-change="onResultChange2" @dialogHandler="yuanjiaoDialogHandler">
+   <my-dialog :isShow="yuanjiaoDialogShow" @on-result-change="onResultChange2" @dialogHandler="yuanjiaoDialogHandler">
       <div slot="title">设置</div>
       <div slot="content">
         <div class="yuanjiaoDialogContent">
-          <div class="yj_row"><span class="set_n">单位</span><checker type="radio" selected-item-class="checked" v-model="yuanjiaoDefaut"><checker-item value="元">元</checker-item><checker-item value="角">角</checker-item><checker-item value="分">分</checker-item></checker></div>
-          <div class="yj_row"><span class="set_n">模式</span><checker type="radio" selected-item-class="checked" v-model="yuanjiaoMode"><checker-item value="1元">1元</checker-item><checker-item value="2元">2元</checker-item></checker></div>
+          <div class="yj_row"><span class="set_n">单位</span><checker class="radio1" type="radio" selected-item-class="checked" v-model="yuanjiaoDefaut"><checker-item value="元">元</checker-item><checker-item value="角">角</checker-item><checker-item value="分">分</checker-item></checker></div>
+          <div class="yj_row"><span class="set_n">模式</span><checker class="radio1" type="radio" selected-item-class="checked" v-model="yuanjiaoMode"><checker-item value="1元">1元</checker-item><checker-item value="2元">2元</checker-item></checker></div>
           <div class="yj_row"><span class="set_n">倍数</span><input type="text" class="betTimesInput"></div>
           <div class="yj_row r_bt">
             <div class="clearfix"><span class="set_n">赔率： <span>1960.00</span></span> <span class="vux-pull-right">返点：100%</span></div>

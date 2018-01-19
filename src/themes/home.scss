@@ -40,18 +40,13 @@ $lotDropBtnColor:#fff;
             }
         }
         .lottery-dropdown-wrap{
-            .lottery-dropdown-list{background: $lotDropBg;padding: 10px 5px 0;position: relative;
-                .lottery-detail-item-wrap{overflow: hidden;
+            .lottery-dropdown-list{background: $lotDropBg;position: relative;height: auto;
+                .lottery-detail-item-wrap{overflow: hidden;padding: 10px 5px 0;
                     .lottery-detail-item{float: left;width: 33.3%;
                         a{display: block;height: 30px;line-height: 30px;text-align: center;background: $lotDropBtnBg;font-size: 13px;color:$lotDropBtnColor;border-radius: 5px;margin: 0px 5px 10px;}
                     }
                 }
             }
         }
-    }
-}
-@media screen and (max-width:320px){
-   .lottery-list{
-
     }
 }
