@@ -1,65 +1,6 @@
-// lottery style
+//result style  投注结果：
+
 *{box-sizing: border-box;}
-.topDropdown {
-  width: (323px) /2;
-  height: (70px) /2;
-  border: 1px solid #fff;
-  margin: 2px auto 0;
-  border-radius: 5px;
-  line-height: 35px;
-  font-size: 14px;
-  color: #fff;
-  position: relative;
-  .betType{font-size: (34px)/2;color: #fa6200;background: #fff;border-radius: 3px;display: inline-block;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 10px;vertical-align: text-bottom; }
-  .t1{margin-right: 5px;}
-  &:after{    content: '';
-    width: 6px;
-    height: 6px;
-    border-left: 1px solid #fff;
-    border-top: 1px solid #fff;
-    position: absolute;
-    transform: rotateZ(-135deg);
-    right: 6px;
-    top: 13px;}
-}
-.betTypePopup{
-  &.vux-popup-dialog{
-    top:44px;bottom: 0;background: #fff;overflow: hidden;
-    .wrapper{      top:55px;   bottom:0;position: absolute;left: 0;right: 0;}
-  }
-}
-.betTypeTab{
-  &.vux-tab{
-    height:55px;padding: 10px 40px;text-align: center;
-    .vux-tab-ink-bar{display: none !important;}
-  }
-  &.vux-tab .vux-tab-item{
-    &.betTypeTabItem{
-      height:35px;width: (255px)/2;flex: none;display: inline-block;line-height: 35px;border-radius: 8px;border: 1px solid #999 !important;background: #fff;
-      &.vux-tab-selected{background: linear-gradient(to right,#fb8819,#f75404);border: 1px solid transparent !important;color: #fff;position: relative;
-        .icon-check{width: 17px;     height: 17px;
-          border-radius: 50%;
-          background: #fff;
-          display: inline-block;
-          vertical-align: -3px;
-          position: relative;
-          margin-right: 10px;
-          &:before{content: '';width: 7px;height: 5px;border-left: 1px solid #fa6200;border-bottom: 1px solid #fa6200;position: absolute;
-            top:4px;transform: rotateZ(-45deg);left: 5px;}
-        }
-
-      }
-      &+.betTypeTabItem{margin-left: 40px;}
-    }
-  }
-}
-.betTypeTabContent{
-  .bttc{display: none;
-    &.active{display: block;}
-  }
-}
-
-//投注结果：
 $orange: #fa6200;
 .result-wrapper{height:100%;background:#f2f2f2;
   .header{position:relative;z-index:9;
