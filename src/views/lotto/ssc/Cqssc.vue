@@ -4,16 +4,28 @@
       <div slot="default" class="topDropdown" @click="showDropdown">
         <span class="betType">官</span><span class="t1">五星</span><span class="t2">直选复式</span>
       </div>
-      <!--<div class="xiaozhushou" slot="right">
+      <div class="xiaozhushou" slot="right">
         <popover placement="bottom" style="position: relative;">
           <div slot="content" class="popContent">
-            那就好收到了好
+            <ul>
+              <li><a href="javascript:void(0);"><i class="icon-person"></i>Admin</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-wallet"></i><span class="themes-color">0.00</span></a></li>
+              <li><a href="javascript:void(0);"><i class="icon-trophy"></i>近期开奖</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-ball1"></i>我的投注</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-ball2"></i>我的追号</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-magic"></i>玩法说明</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-cart"></i>购物车 <x-switch  title="" v-model="sCart"></x-switch></a></li>
+              <li><a href="javascript:void(0);"><i class="icon-ggl"></i>刮刮乐 <x-switch  title="" v-model="sGgl"></x-switch></a></li>
+              <li><a href="javascript:void(0);"><i class="icon-linep1"></i>走势图</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-linep2"></i>路纸图</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-linep3"></i>问路图</a></li>
+            </ul>
           </div>
           <div slot="default">
             <i class="icon-xiaozhushou"></i>小助手
           </div>
         </popover>
-      </div>-->
+      </div>
     </x-header>
     <div class="wrapper content-wrapper" ref="wrapper">
       <div class="content">
@@ -231,7 +243,7 @@
     <div class="lottery-bet1-footer">
       <a href="javascript:void(0);" class="btn-random">机选</a>
       <div class="middle-w">
-        <span class="bet-money">元</span>
+        <span class="bet-money" @click="yuanjiaoDialogHandler">{{yuanjiaoDefaut}}</span>
         <input type="text" class="bet-times">
         <span class="t-times">倍</span>
       </div>
@@ -246,7 +258,7 @@
         <tab-item selected class="betTypeTabItem" @on-item-click="handleTabItemClick"><span class="icon-check"></span>官方玩法</tab-item>
         <tab-item class="betTypeTabItem" @on-item-click="handleTabItemClick"><span class="icon-check"></span>信用玩法</tab-item>
       </tab>
-      <div class="wrapper" ref="bteTypePopupWrapper">
+      <div class="wrapper" ref="betTypePopupWrapper">
         <div class="content">
           <div class="betTypeTabContent">
             <div class="bttc active">
@@ -300,13 +312,40 @@
       </div>
     </popup>
     <!--玩法弹窗-->
-    <my-dialog :isShow="betHelpDialogShow" @on-result-change="onResultChange" @dialogHandler="betHelpDialogHandler" :title="diaTitle" :content="diaContent"></my-dialog>
+    <my-dialog :isShow="betHelpDialogShow" @on-result-change="onResultChange1" @dialogHandler="betHelpDialogHandler" >
+      <div slot="title">弹窗标题</div>
+      <div slot="content">
+        <div style="padding-bottom: 15px;border-bottom: 1px solid #e2e2e2;margin-bottom: 15px;">从百位、十位、个位至少各选1个号码组成一注，所选号码与开奖号码中3位相同，且顺序 一致，即为中奖。</div>
+        <div style="font-size: 17px;color: #fa6200;margin-bottom: 9px;">投注示例：</div>
+        <div style="font-size: 15px;color: #333;margin-bottom: 15px;">投注方案：03 04 05</div>
+        <div style="font-size: 17px;color: #fa6200;margin-bottom: 9px;">投注示例：</div>
+        <div style="font-size: 15px;color: #333;margin-bottom: 15px;">开奖号码：后三位03 04 05，即中后三位直选。</div>
+      </div>
+    </my-dialog>
     <!--圆角分设置弹窗-->
-    <my-dialog :isShow="betHelpDialogShow" @on-result-change="onResultChange" @dialogHandler="betHelpDialogHandler" :title="diaTitle" :content="diaContent"></my-dialog>
+    <my-dialog :isShow="yuanjiaoDialogShow" @on-result-change="onResultChange2" @dialogHandler="yuanjiaoDialogHandler">
+      <div slot="title">设置</div>
+      <div slot="content">
+        <div class="yuanjiaoDialogContent">
+          <div class="yj_row"><span class="set_n">单位</span><checker type="radio" selected-item-class="checked" v-model="yuanjiaoDefaut"><checker-item value="元">元</checker-item><checker-item value="角">角</checker-item><checker-item value="分">分</checker-item></checker></div>
+          <div class="yj_row"><span class="set_n">模式</span><checker type="radio" selected-item-class="checked" v-model="yuanjiaoMode"><checker-item value="1元">1元</checker-item><checker-item value="2元">2元</checker-item></checker></div>
+          <div class="yj_row"><span class="set_n">倍数</span><input type="text" class="betTimesInput"></div>
+          <div class="yj_row r_bt">
+            <div class="clearfix"><span class="set_n">赔率： <span>1960.00</span></span> <span class="vux-pull-right">返点：100%</span></div>
+            <div class="rang_wrap"><range v-model="betTime" :rangeBarHeight="5"></range></div>
+          </div>
+          <div class="xd_row"><span class="set_n">下单提示</span><x-switch class="betTip" title="" v-model="betTip"></x-switch></div>
+          <div class="btn-wrap">
+            <button class="btn">恢复默认</button>
+            <button class="btn btn-ok">确认</button>
+          </div>
+        </div>
+      </div>
+    </my-dialog>
   </div>
 </template>
 <script>
-import {XHeader, Popup, Tab, TabItem, XTable, ButtonTab, ButtonTabItem} from 'vux'
+import {XHeader, Popup, Tab, TabItem, XTable, ButtonTab, ButtonTabItem, Checker, CheckerItem, Range, XSwitch, XButton, Popover} from 'vux'
 import MyDialog from '@/components/MyDialog'
 import BScroll from 'better-scroll'
 import $ from 'jquery'
@@ -319,19 +358,20 @@ export default {
     XTable,
     MyDialog,
     ButtonTab,
-    ButtonTabItem
+    ButtonTabItem,
+    Checker,
+    CheckerItem,
+    Range,
+    XSwitch,
+    XButton,
+    Popover
   },
   data () {
     return {
       showPopup: false,
       showMask: false,
       betHelpDialogShow: false,
-      diaTitle: '弹窗标题',
-      diaContent: '<div style="padding-bottom: 15px;border-bottom: 1px solid #e2e2e2;margin-bottom: 15px;">从百位、十位、个位至少各选1个号码组成一注，所选号码与开奖号码中3位相同，且顺序 一致，即为中奖。</div>' +
-      '<div style="font-size: 17px;color: #fa6200;margin-bottom: 9px;">投注示例：</div>' +
-      '<div style="font-size: 15px;color: #333;margin-bottom: 15px;">投注方案：03 04 05</div>' +
-      '<div style="font-size: 17px;color: #fa6200;margin-bottom: 9px;">投注示例：</div>' +
-      '<div style="font-size: 15px;color: #333;margin-bottom: 15px;">开奖号码：后三位03 04 05，即中后三位直选。</div>',
+      yuanjiaoDialogShow: false,
       numCheck: { // 投注号码状态
         w: {
           n0: {checked: false},
@@ -369,7 +409,13 @@ export default {
       qFirstXiao: true,
       qFirstDang: true,
       qFirstShuang: true,
-      qFirstQing: true
+      qFirstQing: true,
+      yuanjiaoDefaut: '元',
+      yuanjiaoMode: '1元',
+      betTime: 0,
+      betTip: true,
+      sCart: 0,
+      sGgl: 0
     }
   },
   methods: {
@@ -384,17 +430,26 @@ export default {
       $('.bet-record').toggleClass('active')
       $('.bet-record-switch').toggleClass('active')
       var that = this
-      setTimeout(function () {
+      setTimeout(function () { // 当投注记录展开时，禁用页面的滚动，防止冲突
         if ($('.bet-record').hasClass('active')) {
-          this.scrollBetSroll = new BScroll(that.$refs.betRecordWrapper, {})
+          that.scroll.disable()
+        } else {
+          that.scroll = new BScroll(that.$refs.wrapper, {})
         }
       }, 200)
     },
     betHelpDialogHandler: function () {
       this.betHelpDialogShow = !this.betHelpDialogShow
     },
-    onResultChange: function (val) {
+    yuanjiaoDialogHandler: function () {
+      this.yuanjiaoDialogShow = !this.yuanjiaoDialogShow
+      this.betTime = 50
+    },
+    onResultChange1: function (val) {
       this.betHelpDialogShow = val
+    },
+    onResultChange2: function (val) {
+      this.yuanjiaoDialogShow = val
     },
     toggleNumStateW: function (e) { // 万位投注号码handler
       this.wFirstQuan = this.wFirstDa = this.wFirstXiao = this.wFirstDang = this.wFirstShuang = this.wFirstQing = true
@@ -667,9 +722,11 @@ export default {
     $('.bet-h-f .vux-button-group a').on('click', function () {
       $(this).toggleClass('vux-button-group-current')
     })
+    this.betRecordScroll = new BScroll(this.$refs.betRecordWrapper, {})
+    this.scroll = new BScroll(this.$refs.wrapper, {})
     this.$nextTick(() => {
-      this.betPopupScroll = new BScroll(this.$refs.bteTypePopupWrapper, {})
-      this.scroll = new BScroll(this.$refs.wrapper, {})
+      this.betPopupScroll = new BScroll(this.$refs.betTypePopupWrapper, {})
+      // this.scroll = new BScroll(this.$refs.wrapper, {})
     })
   }
 }

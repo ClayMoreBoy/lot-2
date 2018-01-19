@@ -16,6 +16,32 @@ $betInfoBg:rgba(229,229,229,0.9);
     .icon-xiaozhushou{background: url("/static/cssImages/ssc/icon-xiaozhushou.png") center/100%;display: block;width: 22px;height: 22px;margin: 4px auto 0;}
     .vux-popover{left: auto !important;right:0;}
     .popContent{width: (320px)/2;height: (1010px)/2;
+      ul{list-style: none;
+        li{
+          a{height: 45px;line-height: 45px;float: none;display: block;margin:0;padding-left: 43px;position: relative;font-size: 17px;color: #666;
+            &:after{content: '';position: absolute;left: 45px;right: 0;height: 1px;background: #e2e2e2;bottom: 0;}
+            i{position: absolute;width: 43px;height: 45px;left: 0;top: 0;
+              &.icon-person{background: url("/static/cssImages/lotto/xiaozhushou/icon-person.png") no-repeat center / 22px;}
+              &.icon-wallet{background: url("/static/cssImages/lotto/xiaozhushou/icon-wallet.png") no-repeat center / #{(47px/2)};}
+              &.icon-trophy{background: url("/static/cssImages/lotto/xiaozhushou/icon-trophy.png") no-repeat center / #{(52px/2)};}
+              &.icon-ball1{background: url("/static/cssImages/lotto/xiaozhushou/icon-ball1.png") no-repeat center / #{(50px/2)};}
+              &.icon-ball2{background: url("/static/cssImages/lotto/xiaozhushou/icon-ball2.png") no-repeat center / #{(44px/2)};}
+              &.icon-magic{background: url("/static/cssImages/lotto/xiaozhushou/icon-magic.png") no-repeat center / #{(45px/2)};}
+              &.icon-cart{background: url("/static/cssImages/lotto/xiaozhushou/icon-cart.png") no-repeat center / #{(52px/2)};}
+              &.icon-ggl{background: url("/static/cssImages/lotto/xiaozhushou/icon-ggl.png") no-repeat center / #{(46px/2)};}
+              &.icon-linep1{background: url("/static/cssImages/lotto/xiaozhushou/icon-linep1.png") no-repeat center / #{(45px/2)};}
+              &.icon-linep2{background: url("/static/cssImages/lotto/xiaozhushou/icon-linep2.png") no-repeat center / #{(50px/2)};}
+              &.icon-linep3{background: url("/static/cssImages/lotto/xiaozhushou/icon-linep3.png") no-repeat center / #{(47px/2)};}
+            }
+          }
+          .vux-x-switch{display: inline-block;line-height: 1;vertical-align: top;margin-top: 8px;
+            .weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box{    border-color:$themeColor;  background-color: $themeColor;}
+            .weui-switch, .weui-switch-cp__box {width: 35px;height: 17px;border-radius: 8.5px;}
+            .weui-switch:after, .weui-switch-cp__box:after {width: 15px; height: 15px; border-radius: 8px;}
+            .weui-switch:before, .weui-switch-cp__box:before { width: 33px;height: 15px; border-radius: 7.5px;}
+          }
+        }
+      }
     }
     .vux-popover-arrow-up {
       border-left: 5px solid transparent;
@@ -196,12 +222,46 @@ $betInfoBg:rgba(229,229,229,0.9);
   .btn-random{width: (110px/2);height: (70px/2);display: inline-block;vertical-align: top;margin-left: 10px;margin-top: 7px;border: 1px solid #666;border-radius: 5px;text-align: center;line-height: 33px;color: #333;font-size: (34px/2);}
   .middle-w{display: inline-block;vertical-align: top;}
   .bet-money{background: url("/static/cssImages/lotto/icon-money-bg.png") no-repeat center/100%;width: 35px;height: 35px;margin-left: 33px;margin-top: 7px;display: inline-block;vertical-align: top;line-height: 35px;text-align: center;font-size: 16px;color: $themeColor;}
-  .bet-times{width: 90px;   height:35px;font-size: 16px;color: #333;text-align: center;line-height: 33px;border: 1px solid #d5d5d5;border-radius: 5px;margin-top: 7px;margin-left: 8px;}
+  .bet-times{width: 90px;   height:35px;font-size: 16px;color: #333;text-align: center;line-height: 33px;border: 1px solid #d5d5d5;border-radius: 5px;margin-top: 7px;margin-left: 8px;
+    &:focus{outline: 0;}
+  }
   .t-times{font-size: 17px;color: #333;line-height: 49px;display: inline-block;vertical-align: top;margin-left: 6px;}
   .btn-bet{float: right;width: 100px;height: 49px;background: $themeColor;color: $topLinkColor;font-size: 17px;text-align: center;line-height: 49px;
     &.disabled{background: lighten($themeColor,10%)}
   }
   .bet-info{position: absolute;  bottom: 49px;    text-align: center;    left: 0;    right: 0;background: $betInfoBg;font-size: 13px;color: #333;padding: 5px 0;display: none;
     &.show{display: block;}
+  }
+}
+// 圆角设置弹窗
+.yuanjiaoDialogContent{margin: -15px -10px;font-size: 14px;color: #333;
+  .yj_row{height: 45px;border-bottom: 3px solid #f2f2f2;line-height: 45px;padding: 0 20px;
+    .set_n{margin-right: 20px;}
+    .vux-checker-item{
+      &+.vux-checker-item{margin-left: 22px;}
+    }
+    &.r_bt{height: 75px;border-bottom: 0;line-height: 1;padding-top: 10px;}
+  }
+  .betTimesInput{width: 110px;height: 30px;line-height: 28px;background: #e2e2e2;border: 1px solid #999;border-radius: 3px;    padding: 0 5px;    vertical-align: top;    margin-top: 6px;
+    &:focus{outline: 0;}
+  }
+  .rang_wrap{    height: 30px; padding-top: 12px;margin-top: 10px;
+    .range-quantity{background-color: $themeColor;}
+  }
+  .xd_row{height: 45px;line-height: 45px;background: #f2f2f2;padding: 0 20px;}
+  .betTip{display: inline-block;line-height: 1;   vertical-align: top;margin-left: 22px;
+    .weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box{border-color:$themeColor;    background-color: $themeColor;}
+  }
+  .btn-wrap{padding: 15px 20px;text-align: center;
+    button{width: 130px;height: 35px;text-align: center;line-height: 33px;appearance: none;border-radius: (35px/2);border: 1px solid #e2e2e2;background: #fff;color: $themeColor;box-shadow: 0 3px 3px #d3d3d3;font-size: 17px;    font-family: inherit;
+      &.btn-ok{background: $themeColor;border-color: $themeColor;color: #fff;box-shadow: 0 3px 3px rgba(247,83,4,0.2);}
+      &+button{margin-left: 40px;}
+    }
+  }
+}
+// 单选按钮样式
+.vux-checker-box{display: inline-block;vertical-align: top;
+  .vux-checker-item{padding-left: (58px/2);background: url("/static/cssImages/lotto/icon-radio.png") no-repeat 0 / #{(38px/2)};
+    &.checked{background: url("/static/cssImages/lotto/icon-radio-checked.png") no-repeat 0 / #{(38px/2)};}
   }
 }

@@ -2,8 +2,8 @@
   <div>
     <div v-transfer-dom>
       <x-dialog v-model="MyIshow" class="my-dialog" hide-on-blur >
-        <div class="diaTitle">{{title}}</div>
-        <div class="diaContent" v-html="content"></div>
+        <div class="diaTitle"><slot name="title"></slot></div>
+        <div class="diaContent"><slot name="content"></slot></div>
         <span class="close-btn" @click="clickHandler"></span>
       </x-dialog>
     </div>
@@ -15,7 +15,7 @@ export default {
   directives: {
     TransferDom
   },
-  props: ['isShow', 'title', 'content'], // 传进来的props属性
+  props: ['isShow'], // 传进来的props属性
   components: {
     XDialog
   },

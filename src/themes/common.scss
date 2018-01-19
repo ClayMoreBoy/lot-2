@@ -28,6 +28,10 @@ $footerBarBg:#fff !important;
 // global style
 .vux-pull-left{float: left !important;}
 .vux-pull-right{float: right !important;}
-
+.clearfix{
+  &:before,&:after{content:'';display: table;}
+  &:after{clear: both;}
+}
+.themes-color{color: $themeColor;}
 //箭头：
 .pub_arrow{border:1px solid #999;border-width:0px 1px 1px 0;transform: rotate(-45deg);display:inline-block;width:13px;height:13px;}
