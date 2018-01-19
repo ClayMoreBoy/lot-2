@@ -5,6 +5,13 @@ import Promo from '@/views/promo/Promo'
 import Cqssc from '@/views/lotto/ssc/cqssc/index'
 import CqsscG from '@/views/lotto/ssc/cqssc/guan/index'
 import CqsscX from '@/views/lotto/ssc/cqssc/xin/index'
+import PromoShow from '@/views/promo/promo_show'
+import Announce from '@/views/help/Announce'
+import Instruction from '@/views/help/Instruction'
+import Result from '@/views/lotto/result'
+import Trend from '@/views/trend/trend'
+import Confirm_bets from '@/views/lotto/ssc/confirm_bets'
+import Confirm_bets_2 from '@/views/lotto/ssc/confirm_bets_2'
 Vue.use(Router)
 
 export default new Router({
@@ -35,7 +42,6 @@ export default new Router({
           component: CqsscX
         }
       ]
-      component: Cqssc
     },
     {
       path: '/promo/promo_show',
