@@ -261,8 +261,8 @@
       <div class="wrapper" ref="betTypePopupWrapper">
         <div class="content">
           <div class="betTypeTabContent">
-            <div class="bttc active">
-                <div class="betType">
+            <div class="bttc active"> <!--官方玩法-->
+              <div class="betType">
                   <div class="betBigType">定位胆</div>
                   <div class="betExtType">
                     <div class="betTit">定位胆</div>
