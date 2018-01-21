@@ -8,7 +8,7 @@ $betInfoBg:rgba(229,229,229,0.9);
 .header{
   .xiaozhushou{    position: absolute;
     right: -5px;
-    color: #fff;
+    color: #fff;z-index: 502;
     top: -14px;
     font-size: 12px;
     line-height: 1.4;
@@ -87,7 +87,7 @@ $betInfoBg:rgba(229,229,229,0.9);
 }
 .betTypeTab{
   &.vux-tab{
-    height:55px;padding: 10px 40px;text-align: center;z-index: 2;
+    height:55px;padding: 10px 40px;text-align: center;z-index: 3;
     .vux-tab-ink-bar{display: none !important;}
   }
   &.vux-tab .vux-tab-item{
@@ -117,10 +117,10 @@ $betInfoBg:rgba(229,229,229,0.9);
   .betType{font-size: 14px;color: #333;
     a{color: inherit;}
     .betBigType{height:30px;line-height: 30px;background: #f2f2f2;padding: 0 10px;}
-    .betExtType{padding: 10px;display: flex;border-bottom: 5px solid #f2f2f2;
-      .betTit{width:74px;}
+    .betExtType{padding: 10px 10px 2px;display: flex;border-bottom: 5px solid #f2f2f2;
+      .betTit{width:74px;    line-height: 2.2;}
       .betExt{flex: 1;
-        a{width: 83px;height: 30px;line-height: 30px;text-align: center;margin-right: 7.5px;display: inline-block;vertical-align: 0;margin-bottom: 7.5px;border: 1px solid #999;border-radius: 3px;
+        a{width: 83px;height: 30px;line-height: 30px;text-align: center;margin-right: 7.5px;display: inline-block;vertical-align: 0;margin-bottom: 7.5px;border: 1px solid #999;border-radius: 3px;    white-space: nowrap;          font-size: 13px;
           &.cur{border-color: #fa6200;color: #fa6200;}
         }
       }
