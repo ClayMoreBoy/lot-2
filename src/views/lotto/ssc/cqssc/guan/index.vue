@@ -261,47 +261,222 @@
       <div class="wrapper" ref="betTypePopupWrapper">
         <div class="content">
           <div class="betTypeTabContent">
-            <div class="bttc active">
-                <div class="betType">
+            <div class="bttc active"> <!--官方玩法-->
+              <div class="betType">
                   <div class="betBigType">定位胆</div>
-                    <div class="betExtType">
-                      <div class="betTit">定位胆</div>
-                      <div class="betExt">
-                        <router-link class="cur"  to="/">定位胆</router-link>
-                      </div>
-                    </div>
                   <div class="betExtType">
-                    <div class="betTit">五星直选</div>
+                    <div class="betTit">定位胆</div>
                     <div class="betExt">
-                      <router-link  to="/">组选120</router-link>
-                      <router-link  to="/">组选60</router-link>
-                      <router-link  to="/">组选30</router-link>
-                      <router-link  to="/">组选20</router-link>
-                      <router-link  to="/">组选10</router-link>
-                      <router-link  to="/">组选5</router-link>
+                      <router-link class="cur"  to="/">定位胆</router-link>
                     </div>
                   </div>
                 </div>
+              <div class="betType">
+                <div class="betBigType">五星</div>
+                <div class="betExtType">
+                  <div class="betTit">五星</div>
+                  <div class="betExt">
+                    <router-link to="/">直选复式</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">四星</div>
+                <div class="betExtType">
+                  <div class="betTit">四星</div>
+                  <div class="betExt">
+                    <router-link to="/">直选复式</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">后三</div>
+                <div class="betExtType">
+                  <div class="betTit">后三</div>
+                  <div class="betExt">
+                    <router-link  to="/">直选复式</router-link>
+                    <router-link  to="/">直选和值</router-link>
+                    <router-link  to="/">直选跨度</router-link>
+                    <router-link  to="/">后三组合</router-link>
+                    <router-link  to="/">组三复式</router-link>
+                    <router-link  to="/">组六复式</router-link>
+                    <router-link  to="/">组选和值</router-link>
+                    <router-link  to="/">组选包胆</router-link>
+                    <router-link  to="/">和值尾数</router-link>
+                    <router-link  to="/">特殊号</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">前三</div>
+                <div class="betExtType">
+                  <div class="betTit">前三</div>
+                  <div class="betExt">
+                    <router-link  to="/">直选复式</router-link>
+                    <router-link  to="/">直选和值</router-link>
+                    <router-link  to="/">直选跨度</router-link>
+                    <router-link  to="/">前三组合</router-link>
+                    <router-link  to="/">组三复式</router-link>
+                    <router-link  to="/">组六复式</router-link>
+                    <router-link  to="/">组选和值</router-link>
+                    <router-link  to="/">组选包胆</router-link>
+                    <router-link  to="/">和值尾数</router-link>
+                    <router-link  to="/">特殊号</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">前二</div>
+                <div class="betExtType">
+                  <div class="betTit">前二</div>
+                  <div class="betExt">
+                    <router-link  to="/">直选复式</router-link>
+                    <router-link  to="/">直选和值</router-link>
+                    <router-link  to="/">直选跨度</router-link>
+                    <router-link  to="/">组选复式</router-link>
+                    <router-link  to="/">组选和值</router-link>
+                    <router-link  to="/">组选包胆</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">不定位</div>
+                <div class="betExtType">
+                  <div class="betTit">不定位</div>
+                  <div class="betExt">
+                    <router-link  to="/">前三一码</router-link>
+                    <router-link  to="/">前三二码</router-link>
+                    <router-link  to="/">后三一码</router-link>
+                    <router-link  to="/">后三二码</router-link>
+                    <router-link  to="/">前四一码</router-link>
+                    <router-link  to="/">前四二码</router-link>
+                    <router-link  to="/">后四一码</router-link>
+                    <router-link  to="/">后四二码</router-link>
+                    <router-link  to="/">五星二码</router-link>
+                    <router-link  to="/">五星三码</router-link>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="bttc">
               <div class="betType">
-                <div class="betBigType">五星(信用玩法)</div>
+                <div class="betBigType">数字盘</div>
                 <div class="betExtType">
-                  <div class="betTit">五星直选</div>
+                  <div class="betTit">数字盘</div>
                   <div class="betExt">
-                    <router-link class="cur"  to="/">单式</router-link>
-                    <router-link  to="/">复式</router-link>
+                    <router-link to="/">数字盘</router-link>
                   </div>
                 </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">双面</div>
                 <div class="betExtType">
-                  <div class="betTit">五星直选</div>
+                  <div class="betTit">双面</div>
                   <div class="betExt">
-                    <router-link  to="/">组选120</router-link>
-                    <router-link  to="/">组选60</router-link>
-                    <router-link  to="/">组选30</router-link>
-                    <router-link  to="/">组选20</router-link>
-                    <router-link  to="/">组选10</router-link>
-                    <router-link  to="/">组选5</router-link>
+                    <router-link to="/">双面</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">一字定位</div>
+                <div class="betExtType">
+                  <div class="betTit">一字定位</div>
+                  <div class="betExt">
+                    <router-link to="/">万定位</router-link>
+                    <router-link to="/">千定位</router-link>
+                    <router-link to="/">百定位</router-link>
+                    <router-link to="/">十定位</router-link>
+                    <router-link to="/">个定位</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">二字定位</div>
+                <div class="betExtType">
+                  <div class="betTit">二字定位</div>
+                  <div class="betExt">
+                    <router-link to="/">万千</router-link>
+                    <router-link to="/">万百</router-link>
+                    <router-link to="/">万十</router-link>
+                    <router-link to="/">万个</router-link>
+                    <router-link to="/">千百</router-link>
+                    <router-link to="/">千十</router-link>
+                    <router-link to="/">千个</router-link>
+                    <router-link to="/">百十</router-link>
+                    <router-link to="/">百个</router-link>
+                    <router-link to="/">十个</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">三字定位</div>
+                <div class="betExtType">
+                  <div class="betTit">三字定位</div>
+                  <div class="betExt">
+                    <router-link to="/">万千百</router-link>
+                    <router-link to="/">万千十</router-link>
+                    <router-link to="/">万千个</router-link>
+                    <router-link to="/">万百十</router-link>
+                    <router-link to="/">万百个</router-link>
+                    <router-link to="/">万十个</router-link>
+                    <router-link to="/">千百十</router-link>
+                    <router-link to="/">千百个</router-link>
+                    <router-link to="/">千十个</router-link>
+                    <router-link to="/">百十个</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">一字组合</div>
+                <div class="betExtType">
+                  <div class="betTit">一字组合</div>
+                  <div class="betExt">
+                    <router-link to="/">全五一字</router-link>
+                    <router-link to="/">前三一字组合</router-link>
+                    <router-link to="/">中三一字组合</router-link>
+                    <router-link to="/">后三一字组合</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">组选三</div>
+                <div class="betExtType">
+                  <div class="betTit">组选三</div>
+                  <div class="betExt">
+                    <router-link to="/">前三组选三</router-link>
+                    <router-link to="/">中三组选三</router-link>
+                    <router-link to="/">后三组选三</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">组选六</div>
+                <div class="betExtType">
+                  <div class="betTit">组选六</div>
+                  <div class="betExt">
+                    <router-link to="/">前三组选六</router-link>
+                    <router-link to="/">中三组选六</router-link>
+                    <router-link to="/">后三组选六</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">跨度</div>
+                <div class="betExtType">
+                  <div class="betTit">跨度</div>
+                  <div class="betExt">
+                    <router-link to="/">前三跨度</router-link>
+                    <router-link to="/">中三跨度</router-link>
+                    <router-link to="/">后三跨度</router-link>
+                  </div>
+                </div>
+              </div>
+              <div class="betType">
+                <div class="betBigType">龙虎</div>
+                <div class="betExtType">
+                  <div class="betTit">龙虎</div>
+                  <div class="betExt">
+                    <router-link to="/">龙虎</router-link>
                   </div>
                 </div>
               </div>
@@ -420,6 +595,7 @@ export default {
   methods: {
     showDropdown: function () {
       this.showPopup = !this.showPopup
+      this.betPopupScroll = new BScroll(this.$refs.betTypePopupWrapper, {})
     },
     handleTabItemClick: function (index) {
       $('.betTypeTabContent .bttc').removeClass('active')
@@ -724,8 +900,6 @@ export default {
     this.betRecordScroll = new BScroll(this.$refs.betRecordWrapper, {})
     this.scroll = new BScroll(this.$refs.wrapper, {})
     this.$nextTick(() => {
-      this.betPopupScroll = new BScroll(this.$refs.betTypePopupWrapper, {})
-      // this.scroll = new BScroll(this.$refs.wrapper, {})
     })
   }
 }
