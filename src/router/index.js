@@ -10,6 +10,7 @@ import Announce from '@/views/help/Announce'
 import Instruction from '@/views/help/Instruction'
 import Result from '@/views/lotto/Result'
 import Trend from '@/views/trend/Trend'
+import AskRoad from '@/views/trend/AskRoad'
 import ConfirmBets from '@/views/lotto/ssc/ConfirmBets'
 import ConfirmBets2 from '@/views/lotto/ssc/ConfirmBets2'
 Vue.use(Router)
@@ -77,6 +78,11 @@ export default new Router({
       path: '/lotto/ConfirmBets2',
       name: 'ConfirmBets2',
       component: ConfirmBets2
+    },
+    {
+      path: '/trend/AskRoad',
+      name: 'AskRoad',
+      component: AskRoad
     }
   ]
 })
