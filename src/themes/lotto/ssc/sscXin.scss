@@ -1,0 +1,85 @@
+// 时时彩信用玩法 样式
+$betHBg:#f2f2f2;// 投注单项头部背景
+$betHBorderColor:#d5d5d5;
+$orange:#fa6200;
+.sscXin-wrapper{
+   // 头部
+    .bet-top{background:url(/static/cssImages/ssc/xinHeaderBg.jpg) no-repeat center/cover;
+      .left-p{width: 210px;position:relative;
+        &:after{display:block;width: 1px;height:(167px)/2;content:'';position:absolute;right:0;top:5px;background:rgba(225,225,225,0.2);}
+        .bet-num{
+          span{width: (78px)/2;height: (70px)/2;display: inline-block;font-size: 0;vertical-align: top;margin-left:-3px;
+                background:url(/static/cssImages/ssc/xin-num-bg.png) center no-repeat;background-size:35px;
+                font-family: "Helvetica Neue LT Pro";text-align:center;line-height:35px;
+            font{background-image: linear-gradient(#fff,#fdcab6, #fff, #fdcab6,#fff); -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;font-size: 25px;font-weight:bold;}
+          }
+        }
+        .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;}
+      }
+      .right-p{padding-right:13px;position:relative;
+        .count-down span{margin:0 3px;}
+        .ask-road{position:absolute;width:25px;height:60px;text-align:center;font-size:15px;right:-10px;top:20px;padding-top:11px;
+            border:1px solid rgba(225,225,225,0.3);border-right:none;line-height:18px;border-top-left-radius:15px;border-bottom-left-radius:18px;}
+      }
+    }
+    .bet-record-switch{background:url("/static/cssImages/ssc/xin-result-close-bg.png") no-repeat center bottom/100% 10.5px;margin-bottom:0;}
+    .bet-data-switch-tab{height:38px;background:#e3f1fa;padding-top:5px;
+        .data-switch-tab>.tab-btn.cur{border:1px solid $orange !important;}
+        .data-switch-tab .tab-btn{border-color:#999 !important;}
+        .vux-tab{background:none;}
+    }
+    // 投注区域
+    .bet-box{display:flex;border-top:1px solid #768293;left:0;top:202px;right:0;bottom:0;position:absolute;
+          //左侧选项卡区域：
+       .leftBox{width:120px;border-right:1px solid #535460;background:#b4d3f1;overflow:hidden;
+           .vux-tab{display:block;height:auto;width:90px;
+              .vux-tab-item{border-bottom:1px solid #768293 !important;height:(105px)/2;line-height:50px;border-top:1px solid #fff !important;
+                  background:linear-gradient(#d9e9f8,#c4dcf4 40%,#b4d3f1 41%);color:#333;font-size:16px;padding-left:15px;position:relative;
+                  i{display:inline-block;width:8px;height:8px;border-radius:100%;position:absolute;background:#000;left:5px;top:50%;
+                      margin-top:-3px;border:1px solid #000;box-shadow:-0.5px -0.5px 0.5px 0.5px #fff;}
+              }
+              .chip{width:14px;height:10px;background:url(/static/cssImages/ssc/chip-red.png) center no-repeat;display:inline-block;background-size:14px;position:absolute;right:2px;top:2px;}
+              .vux-tab-item.vux-tab-selected{color:#fff;background:linear-gradient(#aec3df,#81a2cd 40%,#5f88c0 41%);
+                i{background:$orange;}
+              }
+           }
+           .vux-tab-ink-bar{display:none !important;}
+
+       }
+          //右侧内容区域：
+        .rightBox{width:100%;overflow:hidden;background:linear-gradient(#e5f4fd, #c6d1e0);
+            .vux-button-group{padding:7px;border-bottom:1px solid #768293;
+                .vux-button-tab-item{height:30px;line-height:30px;font-size:14px;color:#666;background:none;}
+                .vux-button-group-current{border-radius:30px;color:#fff;background:$orange;}
+                .vux-button-tab-item:after{border:none;}
+            }
+            .dingwei{height:37px;border-bottom:1px solid #768293;font-size:17px;color:#666;text-align:center;line-height:36px;
+                .icon-bet-help{vertical-align:middle;margin:-3px 0 0 5px;}
+            }
+              //彩票内容区域：
+            .pour-box{
+                    .vux-checker-item{width:50%;float:left;height:55px;border-right:1px solid #707c8d;border-bottom:1px solid #707c8d;color:#999;text-align:left;position:relative;background:none;padding:0;
+                        p{font-size:14px;line-height:53px;padding-left:25px;overflow:hidden;
+                            span{font-size:17px;color:#666;height:30px;width:30px;line-height:28px;text-align:center;margin-right:10px;display:inline-block;
+                                &.num{font-size:17px;border:1px solid #999;background:linear-gradient(#fff,#c8d2dc);border-radius:100%;box-shadow:0 1px 1px #999;float:left;margin-top:11px;}
+                            }
+                        }
+                        .top{position:absolute;top:5px;right:5px;font-size:10px;line-height:12px;}
+                        .bot{position:absolute;bottom:0px;right:5px;line-height:20px;font-size:9px;padding-right:20px;
+                          &.red{background:url(/static/cssImages/ssc/chip-red.png) right center no-repeat;background-size:18px;}
+                          &.green{background:url(/static/cssImages/ssc/chip-green.png) right center no-repeat;background-size:18px;}
+                          &.org{background:url(/static/cssImages/ssc/chip-org.png) right center no-repeat;background-size:18px;}
+                        }
+                    }
+                    .item-selected{color:#fff;background:#5f88c0;
+                        p span{color:#fff;
+                          &.num{background:linear-gradient(to bottom right,#fff 40%,#c2dcfe);color:#5f88c0;border-color:#fff;box-shadow:0 1px 1px #fff;}
+                        }
+                    }
+            }
+
+        }
+    }
+
+}

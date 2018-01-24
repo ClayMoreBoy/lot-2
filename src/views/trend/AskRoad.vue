@@ -4,7 +4,7 @@
 		<x-header class="header" :left-options="{backText:' '}">
 			{{title}}
 		</x-header>
-      <p @click="showRoad=true" class='showRoad'>出来吧，皮卡丘</p>
+      <p @click="showRoad=true" class='showRoad'>问路途///开奖结果</p>
 
       <div v-transfer-dom class='dialog-page'>
         <x-dialog v-model="showRoad">
@@ -16,8 +16,8 @@
                   </tab>
                   <div @click="showRoad=false" class="close"><span></span></div>
               </div>
-
-              <div class='roadCont' v-if='activeTab == 0'>
+            <!--问路图 ：-->
+            <div class='roadCont' v-if='activeTab == 0'>
                   <div class='shaixuan'>
                      <div class='ball pub-tit'>
                        <selector placeholder="第一球" value='first' name="district" :options="list"></selector>
@@ -121,7 +121,7 @@
                       <p class='right'>小问路 <span><font class='bor'></font><font class='cir'></font><font class='line'></font></span></p>
                   </div>
               </div>
-
+              <!--开奖结果：-->
               <div  class='resultCont' v-if='activeTab == 1' >
                   <flexbox class='tit'>
                     <flexbox-item :span="3"><p>期号</p></flexbox-item>
@@ -132,7 +132,7 @@
                     <div class='content'>
                         <flexbox class='list' v-for='(info,index) in result' :key='index'>
                           <flexbox-item :span="3"><p class='iss'>{{info.iss}}</p></flexbox-item>
-                          <flexbox-item :span="4"><p>{{info.num}}</p></flexbox-item>
+                          <flexbox-item :span="4"><p>{{info.num1}} <font>{{info.num2}}</font></p></flexbox-item>
                           <flexbox-item :span="5"><p>{{info.star}}</p></flexbox-item>
                         </flexbox>
                     </div>
@@ -149,26 +149,26 @@
     import { XHeader, Group, XDialog, Scroller, Tab, Selector, TabItem, TransferDomDirective as TransferDom, FlexboxItem, Flexbox } from 'vux'
     import BScroll from 'better-scroll'
 const result = [
-  {key: '1', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '2', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '3', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'},
-  {key: '4', iss: '68期', num: '7,1,5,3,4', star: '15 小 单 龙'}
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'},
+  {key: '1', iss: '68期', num1: '7 1', num2: '5 6 7', star: '15 小 单 龙'}
 ]
 export default{
   directives: { TransferDom },

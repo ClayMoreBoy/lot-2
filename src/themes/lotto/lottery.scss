@@ -213,9 +213,9 @@ $betInfoBg:rgba(229,229,229,0.9);
   }
 }
 // 玩法说明
-.bet-help{font-size: 14px;color: #666;padding: 0 10px;    margin-bottom: 5px;
-  .icon-bet-help{background: url("/static/cssImages/lotto/icon-ques2.png") center /100%;width: 15px;height: 15px;display: inline-block;vertical-align: top;margin: 3px 0 0 5px;}
-}
+.bet-help{font-size: 14px;color: #666;padding: 0 10px;    margin-bottom: 5px;}
+.icon-bet-help{background: url("/static/cssImages/lotto/icon-ques2.png") center /100%;width: 15px;height: 15px;display: inline-block;vertical-align: top;margin: 3px 0 0 5px;}
+
 // 底部投注区域
 .lottery-bet1-footer{
   height: 49px;position: absolute;bottom: 0;left: 0;right: 0;box-shadow: 0 0 4px rgba(0,0,0,0.38);    z-index: 3;
