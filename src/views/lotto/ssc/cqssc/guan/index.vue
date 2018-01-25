@@ -516,11 +516,13 @@
         </div>
       </div>
     </my-dialog>
+    <ask-road></ask-road>
   </div>
 </template>
 <script>
 import {XHeader, Popup, Tab, TabItem, XTable, ButtonTab, ButtonTabItem, Checker, CheckerItem, Range, XSwitch, XButton, Popover} from 'vux'
 import MyDialog from '@/components/MyDialog'
+import AskRoad from '@/components/AskRoad'
 import BScroll from 'better-scroll'
 import $ from 'jquery'
 export default {
@@ -538,7 +540,8 @@ export default {
     Range,
     XSwitch,
     XButton,
-    Popover
+    Popover,
+    AskRoad
   },
   data () {
     return {
