@@ -11,8 +11,8 @@ import Instruction from '@/views/help/Instruction'
 import Result from '@/views/lotto/Result'
 import Trend from '@/views/trend/Trend'
 import AskRoad from '@/views/trend/AskRoad'
-import ConfirmBets from '@/views/lotto/ssc/ConfirmBets'
-import ConfirmBets2 from '@/views/lotto/ssc/ConfirmBets2'
+import ConfirmBets from '@/views/lotto/ConfirmBets'
+import ConfirmBets2 from '@/views/lotto/ConfirmBets2'
 Vue.use(Router)
 
 export default new Router({
