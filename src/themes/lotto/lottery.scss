@@ -315,7 +315,12 @@ $orange: #fa6200;
 
   }
 }
-
+// 投注确认弹窗
+.betConfirm{text-align: center;font-size: 17px;line-height: 1.5;
+  button{width: 130px;height: 35px;text-align: center;line-height: 33px;appearance: none;border-radius: (35px/2);border: 1px solid #e2e2e2;background: #fff;color: $themeColor;box-shadow: 0 3px 3px #d3d3d3;font-size: 17px;    font-family: inherit;margin-top:23px;
+    &.btn-ok{background: $themeColor;border-color: $themeColor;color: #fff;box-shadow: 0 3px 3px rgba(247,83,4,0.2);}
+  }
+}
 
 
 

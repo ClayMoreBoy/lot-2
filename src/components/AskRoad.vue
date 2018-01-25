@@ -1,11 +1,5 @@
 <template>
 	<div class="askroad-wrapper">
-		<!--头部-->
-		<x-header class="header" :left-options="{backText:' '}">
-			{{title}}
-		</x-header>
-      <p @click="showRoad=true" class='showRoad'>问路途///开奖结果</p>
-
       <div v-transfer-dom class='dialog-page'>
         <x-dialog v-model="showRoad">
           <div class="road-page" >
@@ -175,7 +169,6 @@ export default{
   components: { XHeader, Group, XDialog, Scroller, Tab, TabItem, Selector, FlexboxItem, Flexbox },
   data () {
         return {
-          title: '问路',
           showRoad: true,
           index: 0,
           result: result,
@@ -188,17 +181,14 @@ export default{
   methods: {
         onItemClick (index) {
           this.activeTab = index
-        },
-        scrollInit: function () {
-          this.$nextTick(() => {
-            this.scroll = new BScroll(this.$refs.wrapper, {})
-          })
+          if (index === 1) {
+            setTimeout(() => {
+              this.scroll = new BScroll(this.$refs.wrapper, {})
+            }, 200)
+          }
         }
       },
   mounted () {
-        this.$nextTick(() => {
-          this.scroll = new BScroll(this.$refs.wrapper, {})
-        })
       }
 }
 </script>
