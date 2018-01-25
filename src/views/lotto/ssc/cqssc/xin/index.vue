@@ -204,8 +204,7 @@
 
       </div>
 
-
-
+    <!-- 顶部切换窗口：-->
     <popup class="betTypePopup" position="bottom" v-model="showPopup" :show-mask="showMask">
       <tab class="betTypeTab">
         <tab-item selected class="betTypeTabItem" @on-item-click="handleTabItemClick"><span class="icon-check"></span>官方玩法</tab-item>
@@ -451,6 +450,19 @@
       </div>
     </my-dialog>
 
+    <!--底部下注窗口：-->
+    <div class="confirmBet">
+        <div class="top">共20注  699999金币  <span class="right">可中奖15676846金币</span></div>
+        <div class="mid">
+            <div class="btn-1">
+              <x-switch title=" " :value="true" ></x-switch>
+              <input type="number" placeholder="手动输入" class="num">
+              <button class="clear">清</button>
+            </div>
+            <button class="btn-2">投注</button>
+            <button class="btn-3">重置</button>
+        </div>
+    </div>
 
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-	<div class="confirm-wrapper">
+	<div class="confirm-wrapper confirm-wrapper-2">
 		<!--头部-->
 		<x-header class="header" :left-options="{backText:' '}">
 			{{title}}
@@ -9,14 +9,19 @@
 		<div class="wrapper" ref="wrapper">
 			<div class="content">
         <p class='time'>距2018139期截止：<font>11:28:36</font></p>
-        <p class='tit'><button class='close'>清空列表</button> <font class='purse'>195.11</font></p>
+        <p class='tit'><button class='close'>清空列表</button><button class='random'>随机一注</button> <font class='purse'>195.11</font></p>
         <ul class='list-box'>
             <li v-for='info in betlist'>
               <p class='left'></p>
-              <div class='center'><span>数字盘：</span><p class='num'>{{info.num}}</p></div>
+              <div class='center'>
+                  <p class='num'>{{info.num}}</p>
+                  <font>后三直选复式 1000注</font>
+                  <font>3倍  3000金币</font>
+              </div>
               <div class='right'>
-                  <p>单注<input type='number' />金币</p>
-                  <p>共1注，共{{info.money}}金币</p>
+                  <p>投<input type='number' />倍</p>
+                  <p>追<input type='number' />期</p>
+                  <button class='follow'>追号</button>
               </div>
             </li>
          </ul>
@@ -63,5 +68,5 @@ export default{
 
 
 <style lang="scss">
-	@import "~themes/lotto/ssc/confirm_bets"
+	@import "~themes/lotto/confirm_bets"
 </style>

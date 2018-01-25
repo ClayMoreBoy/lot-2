@@ -82,4 +82,26 @@ $orange:#fa6200;
         }
     }
 
+    //下注窗口：
+    .confirmBet{ height:(288px)/2;border-top:1px solid #535460;box-shadow:0 5px 8px #7089a2 inset;position:relative;z-index:999;
+            background:linear-gradient(#9fc2e6 60%,#8fb6df 61% );padding:0 10px;
+        .right{float:right;}
+        .top{font-size:12px;color:#000;height:40px;line-height:40px;}
+        .mid{height:45px; width:155px;overflow:hidden;
+            .btn-1{height:32px;background:#fff;border-radius:6px;border:1px solid #9192a7;float:left;
+                .vux-x-switch{padding:0;margin:3px;float:left;
+                    .weui-switch{width:(88px)/2;height:24px;line-height:24px;background:#9a9a9a;
+                      &:after{width:22px;height:22px;content:'忆';text-align:center;color:#5f88c0;font-size:15px;}
+                      &:before{width:22px;height:22px;}
+                      &:checked{background:#5f88c0;border:none;
+                          &:after{top:1px;}
+                      }
+                    }
+                }
+                .num{height:22px;line-height:22px;border:none;width:60px;margin:4px 5px;display:inline-block;font-size:14px;}
+                .clear{width:25px;height:26px;background:#fff; ;line-height:26px;border:1px solid #9192a7;font-size:17px;color:#8e8ea2;text-align:center;border-radius:3px;margin:2px;float:right;}
+            }
+        }
+    }
+
 }
