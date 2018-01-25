@@ -32,8 +32,8 @@ $orange:#fa6200;
     // 投注区域
     .bet-box{display:flex;border-top:1px solid #768293;left:0;top:202px;right:0;bottom:0;position:absolute;
           //左侧选项卡区域：
-       .leftBox{width:120px;border-right:1px solid #535460;background:#b4d3f1;overflow:hidden;
-           .vux-tab{display:block;height:auto;width:90px;
+       .leftBox{width:95px;border-right:1px solid #535460;background:#b4d3f1;overflow:hidden;
+           .vux-tab{display:block;height:auto;width:95px;
               .vux-tab-item{border-bottom:1px solid #768293 !important;height:(105px)/2;line-height:50px;border-top:1px solid #fff !important;
                   background:linear-gradient(#d9e9f8,#c4dcf4 40%,#b4d3f1 41%);color:#333;font-size:16px;padding-left:15px;position:relative;
                   i{display:inline-block;width:8px;height:8px;border-radius:100%;position:absolute;background:#000;left:5px;top:50%;
@@ -48,7 +48,7 @@ $orange:#fa6200;
 
        }
           //右侧内容区域：
-        .rightBox{width:100%;overflow:hidden;background:linear-gradient(#e5f4fd, #c6d1e0);
+        .rightBox{flex:1;overflow:hidden;background:linear-gradient(#e5f4fd, #c6d1e0);
             .vux-button-group{padding:7px;border-bottom:1px solid #768293;
                 .vux-button-tab-item{height:30px;line-height:30px;font-size:14px;color:#666;background:none;}
                 .vux-button-group-current{border-radius:30px;color:#fff;background:$orange;}
