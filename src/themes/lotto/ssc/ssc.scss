@@ -1,9 +1,4 @@
 // 时时彩样式
-$betHBg:#f2f2f2;// 投注单项头部背景
-$betHBorderColor:#d5d5d5;
-$themeColor:#fa6200;
-//@import url("/src/assets/swiper");
-
 // 投注区域头部
 .bet-top{
   .left-p{
@@ -19,32 +14,6 @@ $themeColor:#fa6200;
         &.ssc_n8{background: url("/static/cssImages/ssc/ssc-num8.png") center /100%;}
         &.ssc_n9{background: url("/static/cssImages/ssc/ssc-num9.png") center /100%;}
       }
-    }
-  }
-}
-// 投注区域
-.bet-area{
-  .bet-h{height: 44px;background-color: $betHBg;border-bottom: 1px solid $betHBorderColor;
-    .bet-h-p{float: left;width: 40px;height: 30px;text-align: center;line-height: 30px;color: #fff;font-size: 14px;background: $themeColor;border-radius: 2px;position: relative;margin: 7px 0 0 10px;
-      &:after{content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid $themeColor;border-bottom: 0;position: absolute;left: 50%;margin-left: -6px;bottom: -6px;}
-    }
-    .bet-h-f{
-      width: (434px/2);    float: right;margin: 6.5px 10px 0 0;
-      .vux-button-group > a.vux-button-tab-item-first,.vux-button-group > a.vux-button-tab-item-first:after{    border-top-left-radius: 5px;        border-bottom-left-radius: 5px;}
-      .vux-button-group > a.vux-button-tab-item-last,.vux-button-group > a.vux-button-tab-item-last:after{ border-top-right-radius: 5px;        border-bottom-right-radius: 5px;}
-      .vux-button-group > a.vux-button-tab-item-middle:after,.vux-button-group > a.vux-button-tab-item-last:after{    border-right: 1px solid #d3d3d3;        border-top: 1px solid #d3d3d3;        border-bottom: 1px solid #d3d3d3;}
-      .vux-button-group > a.vux-button-tab-item-first:after{border: 1px solid #d3d3d3;}
-      .vux-button-group > a.vux-button-group-current{background: $themeColor;}
-    }
-  }
-  .bet-c{padding-bottom: 10px;    overflow: hidden;
-    .num{margin-top: 10px;margin-left: 14px;float: left;
-      .n-p{width: (76px/2);height: (80px/2);display: inline-block;vertical-align: top;background: url("/static/cssImages/lotto/ssc/bet-num-bg.png") no-repeat center top /100%;font-size: 22px;color: $themeColor;text-align: center;    line-height: 38px;
-        &.active{background: url("/static/cssImages/lotto/ssc/bet-num-bg-active.png") no-repeat center top /100%;
-          color: #fff;
-        }
-      }
-      .n-t{display: block;font-size: 14px;color: #666;text-align: center;    line-height: 1;     margin-top: 2px;}
     }
   }
 }

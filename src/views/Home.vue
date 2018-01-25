@@ -32,7 +32,7 @@
 		</div>
 		<!--底部导航-->
 		<tabbar class="footer-bar">
-			<tabbar-item selected>
+			<tabbar-item link="/" selected>
 				<span slot="label">购彩大厅</span>
 				<img slot="icon" src="/static/images/lottery/icon-home.png"/>
 				<img slot="icon-active" src="/static/images/lottery/icon-home-active.png"/>
@@ -47,7 +47,7 @@
 				<img slot="icon" src="/static/images/lottery/icon-orderRecord.png"/>
 				<img slot="icon-active" src="/static/images/lottery/icon-orderRecord-active.png"/>
 			</tabbar-item>
-			<tabbar-item>
+			<tabbar-item link="/mine">
 				<span slot="label">会员中心</span>
 				<img slot="icon" src="/static/images/lottery/icon-mine.png"/>
 				<img slot="icon-active" src="/static/images/lottery/icon-mine-active.png"/>
@@ -94,14 +94,35 @@ const lotteryRow = [
         ],
         noSubType: false
       },
-      {name: 'PK拾', sName: 'pk10', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/pk10.png', lotterySubType: [
+      {
+        name: 'PK拾',
+        sName: 'pk10',
+        lotteryType: '高频彩',
+        lotteryImg: '/static/images/lottery/pk10.png',
+        lotterySubType: [
         {name: 'PK拾(官)', link: '/lotto/pk10/guan'},
         {name: 'PK拾(信)', link: '/lotto/pk10/xin'}
-      ], noSubType: false}
+        ],
+        noSubType: false}
     ]},
   {name: 'row2',
     data: [
-      {name: '快3', sName: 'k3', lotteryType: '高频彩', lotteryImg: '/static/images/lottery/k3.png', lotterySubType: [{name: '江苏快3', link: '/lotto/jsk3'}, {name: '湖北快3', link: '/lotto/hbk3'}, {name: '广西快3', link: '/lotto/gxk3'}, {name: '安徽快3', link: '/lotto/ahk3'}], noSubType: false},
+      {
+        name: '快3',
+        sName: 'k3',
+        lotteryType: '高频彩',
+        lotteryImg: '/static/images/lottery/k3.png',
+        lotterySubType: [
+          {name: '江苏快3(官)', link: '/lotto/jsk3/guan'},
+          {name: '江苏快3(信)', link: '/lotto/jsk3/xin'},
+          {name: '湖北快3(官)', link: '/lotto/hbk3/guan'},
+          {name: '湖北快3(信)', link: '/lotto/hbk3/xin'},
+          {name: '广西快3(官)', link: '/lotto/gxk3/guan'},
+          {name: '广西快3(信)', link: '/lotto/gxk3/xin'},
+          {name: '安徽快3(官)', link: '/lotto/ahk3/guan'},
+          {name: '安徽快3(信)', link: '/lotto/ahk3/xin'}
+        ],
+        noSubType: false},
       {name: '六合彩', sName: 'lhc', lotteryType: '低频彩', lotteryImg: '/static/images/lottery/lhc.png', lotterySubType: [], noSubType: true}
     ]},
   {name: 'row3',

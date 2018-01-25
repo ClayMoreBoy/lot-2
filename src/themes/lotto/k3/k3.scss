@@ -1,0 +1,28 @@
+// 时时彩样式
+// 投注区域头部
+.bet-top{
+  .left-p{
+    .bet-num{
+      span{width: (89px)/2;height: (88px)/2;display: inline-block;font-size: 0;vertical-align: top;margin-left: -3px;      margin-right: 3px;
+        &.ssc_n1{background: url("/static/cssImages/ssc/ssc-num1.png") center /100%;}
+        &.ssc_n2{background: url("/static/cssImages/ssc/ssc-num2.png") center /100%;}
+        &.ssc_n3{background: url("/static/cssImages/ssc/ssc-num3.png") center /100%;}
+        &.ssc_n4{background: url("/static/cssImages/ssc/ssc-num4.png") center /100%;}
+        &.ssc_n5{background: url("/static/cssImages/ssc/ssc-num5.png") center /100%;}
+        &.ssc_n6{background: url("/static/cssImages/ssc/ssc-num6.png") center /100%;}
+        &.ssc_n7{background: url("/static/cssImages/ssc/ssc-num7.png") center /100%;}
+        &.ssc_n8{background: url("/static/cssImages/ssc/ssc-num8.png") center /100%;}
+        &.ssc_n9{background: url("/static/cssImages/ssc/ssc-num9.png") center /100%;}
+      }
+    }
+  }
+}
+// 投注区域
+.bet-area{
+  .bet-h{
+    .bet-h-p{font-size: 12px; }
+  }
+}
+
+
+//时时彩信用玩法：

@@ -11,6 +11,20 @@ import XjsscX from '@/views/lotto/ssc/xjssc/xin/index'
 import Pk10 from '@/views/lotto/pk10/index'
 import Pk10G from '@/views/lotto/pk10/guan/index'
 import Pk10X from '@/views/lotto/pk10/xin/index'
+import Jsk3 from '@/views/lotto/k3/jsk3/index'
+import Jsk3G from '@/views/lotto/k3/jsk3/guan/index'
+import Jsk3X from '@/views/lotto/k3/jsk3/xin/index'
+import Hbk3 from '@/views/lotto/k3/hbk3/index'
+import Hbk3G from '@/views/lotto/k3/hbk3/guan/index'
+import Hbk3X from '@/views/lotto/k3/hbk3/xin/index'
+import Gxk3 from '@/views/lotto/k3/gxk3/index'
+import Gxk3G from '@/views/lotto/k3/gxk3/guan/index'
+import Gxk3X from '@/views/lotto/k3/gxk3/xin/index'
+import Ahk3 from '@/views/lotto/k3/ahk3/index'
+import Ahk3G from '@/views/lotto/k3/ahk3/guan/index'
+import Ahk3X from '@/views/lotto/k3/ahk3/xin/index'
+import Mine from '@/views/mine/index'
+import OnlineService from '@/views/mine/onlineservice/index'
 import PromoShow from '@/views/promo/PromoShow'
 import Announce from '@/views/help/Announce'
 import Instruction from '@/views/help/Instruction'
@@ -82,6 +96,84 @@ export default new Router({
           component: Pk10X
         }
       ]
+    },
+    { // 江苏快3路由
+      path: '/lotto/jsk3',
+      name: 'Jsk3',
+      component: Jsk3,
+      children: [
+        {
+          path: 'guan',
+          name: 'Jsk3G',
+          component: Jsk3G
+        },
+        {
+          path: 'xin',
+          name: 'Jsk3X',
+          component: Jsk3X
+        }
+      ]
+    },
+    { // 湖北快3路由
+      path: '/lotto/hbk3',
+      name: 'Hbk3',
+      component: Hbk3,
+      children: [
+        {
+          path: 'guan',
+          name: 'Hbk3G',
+          component: Hbk3G
+        },
+        {
+          path: 'xin',
+          name: 'Hbk3X',
+          component: Hbk3X
+        }
+      ]
+    },
+    { // 广西快3路由
+      path: '/lotto/gxk3',
+      name: 'Gxk3',
+      component: Gxk3,
+      children: [
+        {
+          path: 'guan',
+          name: 'Gxk3G',
+          component: Gxk3G
+        },
+        {
+          path: 'xin',
+          name: 'Gxk3X',
+          component: Gxk3X
+        }
+      ]
+    },
+    { // 安徽快3路由
+      path: '/lotto/ahk3',
+      name: 'Ahk3',
+      component: Ahk3,
+      children: [
+        {
+          path: 'guan',
+          name: 'Ahk3G',
+          component: Ahk3G
+        },
+        {
+          path: 'xin',
+          name: 'Ahk3X',
+          component: Ahk3X
+        }
+      ]
+    },
+    { // 个人中心路由
+      path: '/mine',
+      name: 'Mine',
+      component: Mine
+    },
+    { // 在线客服路由
+      path: '/mine/OnlineService',
+      name: 'OnlineService',
+      component: OnlineService
     },
     {
       path: '/promo/PromoShow',

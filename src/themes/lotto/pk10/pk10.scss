@@ -1,0 +1,25 @@
+// pk1k0样式
+// 投注区域头部
+.bet-top{
+  .left-p{
+    .bet-num{
+      font-size: 0;white-space: nowrap;
+      &>span{width: (42px)/2;height: (42px)/2;display: inline-block;    -webkit-text-stroke: 0.5px #000;vertical-align: top;border-radius: 2px;margin-right: 3px;font-size: 13px;font-weight:bold;color: #fff;text-align: center;line-height: (42px/2);
+        &.pk10_n1{background: #f6d51b;}
+        &.pk10_n2{background: #2c93fc;}
+        &.pk10_n3{background: #535353;}
+        &.pk10_n4{background: #f77514;}
+        &.pk10_n5{background: #4edef4;}
+        &.pk10_n6{background: #4e1fe7;}
+        &.pk10_n7{background: #cfcfcf;}
+        &.pk10_n8{background: #e7241f;}
+        &.pk10_n9{background: #7d0000;}
+        &.pk10_n10{background: #30c263;}
+      }
+      .extra-num{margin-top: 5px;text-align: center;
+        span{width: (42px)/2;height: (42px)/2;display: inline-block;  vertical-align: top;border-radius: 2px;margin-right: 3px;font-size: 15px;color: #ddd; border: 1px solid #ddd;text-align: center;line-height: (42px/2);}
+      }
+    }
+  }
+}
+//  pk10信用玩法：
