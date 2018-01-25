@@ -459,8 +459,30 @@
               <input type="number" placeholder="手动输入" class="num">
               <button class="clear">清</button>
             </div>
-            <button class="btn-2">投注</button>
-            <button class="btn-3">重置</button>
+            <button class="btn-2">投 注</button>
+            <button class="btn-3">重 置</button>
+        </div>
+        <div class="bot">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span class="num-2">1</span>
+                <span class="num-2">5</span>
+                <span class="num-2">10</span>
+                <span class="num-2">50</span>
+                <span class="num-3">100</span>
+                <span class="num-3">500</span>
+              </div>
+              <div class="swiper-slide">
+                <span class="num-4">1000</span>
+                <span class="num-4">5000</span>
+                <span class="num-5">10000</span>
+                <span class="num-5">50000</span>
+              </div>
+            </div>
+            <div class="swiper-button-prev turn"><span></span></div>
+            <div class="swiper-button-next turn"><span></span></div>
+          </div>
         </div>
     </div>
 
@@ -470,7 +492,9 @@
   import {XHeader, Popup, Tab, TabItem, XTable, ButtonTab, ButtonTabItem, Checker, CheckerItem, Range, XSwitch, XButton, Popover} from 'vux'
   import MyDialog from '@/components/MyDialog'
   import BScroll from 'better-scroll'
+  import Swiper from 'swiper'
   import $ from 'jquery'
+
   export default {
     components: {
       XHeader,
@@ -514,6 +538,9 @@
         $('.betTypeTabContent .bttc').removeClass('active')
         $('.betTypeTabContent .bttc').eq(index).addClass('active')
       },
+      onResultChange1: function (val) {
+        this.betHelpDialogShow = val
+      },
       toggleBetRecord: function (e) {
         $('.bet-record').toggleClass('active')
         $('.bet-box').toggleClass('addTop')
@@ -544,15 +571,25 @@
       this.betRecordScroll = new BScroll(this.$refs.betRecordWrapper, {})
       this.betRecordScroll = new BScroll(this.$refs.leftWrapper, {})
       this.betRecordScroll = new BScroll(this.$refs.rightWrapper, {})
-      this.scroll = new BScroll(this.$refs.wrapper, {})
+      //      筹码：
+      this.mySwiper = new Swiper ('.swiper-container', {
+        freeMode : true,
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
     }
   }
 </script>
 <style lang="scss">
   @import '~themes/lotto/lottery';
-  @import '~themes/lotto/ssc/sscXin';
+  @import '~themes/lotto/ssc/ssc';
+  @import '~themes/swiper/swiper.min';
   .content-wrapper{
     position: absolute;overflow: hidden;
     top:44px;right: 0;bottom: 49px;left: 0;
   }
 </style>
+
