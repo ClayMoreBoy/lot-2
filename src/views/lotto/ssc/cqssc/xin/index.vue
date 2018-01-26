@@ -55,10 +55,8 @@
             </div>
 
             <!--问路弹框：-->
-            <div v-if="showAskRoad" class="aaaaaaaa">
-              <AskRoad></AskRoad>
-            </div>
-            <p class="ask-road" v-on:click='showAskRoad = !showAskRoad'>问路</p>
+            <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
+            <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>
           </div>
         </div>
         <!--开奖记录-->
@@ -591,6 +589,7 @@
         showMask: false,
         betHelpDialogShow: false,
         yuanjiaoDialogShow: false,
+        askRoadDialogShow: false,
         betTime: 0,
         betTip: true,
         index: 0,
@@ -607,6 +606,9 @@
         } else {
           this.showBetbox = true
         }
+      },
+      askRoadDialogShowHandler: function () {
+        this.askRoadDialogShow = !this.askRoadDialogShow
       },
       onItemClick (index) {
         this.activeTab = index
@@ -638,6 +640,9 @@
       yuanjiaoDialogHandler: function () {
         this.yuanjiaoDialogShow = !this.yuanjiaoDialogShow
         this.betTime = 50
+      },
+      onResultChangeAR: function (val) {
+        this.askRoadDialogShow = val
       }
     },
     mounted () {

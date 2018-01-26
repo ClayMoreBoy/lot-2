@@ -1,14 +1,14 @@
 <template>
 	<div class="askroad-wrapper">
       <div v-transfer-dom class='dialog-page'>
-        <x-dialog v-model="showRoad">
+        <x-dialog v-model="MyIshow">
           <div class="road-page" >
               <div class='top'>
                   <tab>
                      <tab-item selected @on-item-click="onItemClick">问路图</tab-item>
                      <tab-item @on-item-click="onItemClick">开奖结果</tab-item>
                   </tab>
-                  <div @click="showRoad=false" class="close"><span></span></div>
+                  <div @click="MyIshow=false" class="close"><span></span></div>
               </div>
             <!--问路图 ：-->
             <div class='roadCont' v-if='activeTab == 0'>
@@ -166,10 +166,11 @@ const result = [
 ]
 export default{
   directives: { TransferDom },
+  props: ['isShow'],
   components: { XHeader, Group, XDialog, Scroller, Tab, TabItem, Selector, FlexboxItem, Flexbox },
   data () {
         return {
-          showRoad: true,
+          MyIshow: this.isShow,
           index: 0,
           result: result,
           defaultValue: 'first',
@@ -187,9 +188,15 @@ export default{
             }, 200)
           }
         }
-      },
-  mounted () {
-      }
+  },
+  watch: {   // prop属性的双向绑定
+    isShow (val) {
+      this.MyIshow = val
+    },
+    MyIshow (val) {
+      this.$emit('on-result-change', val)
+    }
+  }
 }
 </script>
 
