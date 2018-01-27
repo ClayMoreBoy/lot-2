@@ -1,0 +1,25 @@
+
+.kl10-wrapper{
+  .bet-top{padding:0;display:block;
+      .qishu{height:28px;line-height:28px;background:rgba(0,0,0,0.2);padding:0 7px;font-size:12px;width:100%;white-space:nowrap;}
+      .count-down{float:right;margin-top:6px;height:22px;
+        span{margin:2px 0 0 3px;height:14px;background-size:9px;width:9px;font-size:0;}
+        span.cd_dot{background-size:2.5px;width:4px;background-position:bottom center;margin:2px -1px 0 1px;}
+      }
+      .till{float:right;font-size:12px;
+          font{margin:0 2px 0 8px;}
+      }
+    .bet-num{text-align:center;margin-top:5px;
+      span{width: (65px)/2;height: (65px)/2;display: inline-block;font-size: 0;vertical-align: top;margin:3px;
+        background:url(/static/cssImages/ssc/xin-num-bg.png) center no-repeat;background-size:32px;
+        text-align:center;line-height:34px;
+        font{background-image: linear-gradient(#fff 25%,#fdcab6,#fff, #fdcab6,#fff); -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;font-size: 20px;font-weight:bold;letter-spacing:-1px;}
+      }
+    }
+    .bet-res{font-size:15px;line-height:25px;text-align:center;
+      font{padding:0 5px;}
+    }
+  }
+
+}

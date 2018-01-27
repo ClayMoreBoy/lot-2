@@ -1,0 +1,22 @@
+//体彩排列3 信用玩法：-
+$orange:#fa6200;
+.pl3-wrapper{
+  // 头部
+  .bet-top{
+    .left-p{width: 230px;
+      .bet-num{float:left;
+        span{width: (75px)/2;height: (75px)/2;display: inline-block;font-size: 0;vertical-align: top;margin:0 5px 0 -3px;
+          background:url(/static/cssImages/ssc/xin-num-bg.png) center no-repeat;background-size:38px;
+          font-family: "Helvetica Neue LT Pro";text-align:center;line-height:37px;
+          font{background-image: linear-gradient(#fff 20%,#fdcab6, #fff, #fdcab6,#fff); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;font-size: 28px;font-weight:bold;}
+        }
+      }
+      .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;floating: right;line-height:38px;}
+    }
+    .right-p{padding-right:0;margin-right:-10px;
+      .qishu{margin-bottom:5px;}
+    }
+  }
+
+}

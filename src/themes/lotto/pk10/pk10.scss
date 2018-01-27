@@ -23,3 +23,39 @@
   }
 }
 //  pk10信用玩法：
+.xin-wrapper{
+    //彩票背景色：
+    .colorNum{
+      .num-8{background:#e7241f !important;}
+      .num-6{background:#4e1fe7 !important;}
+      .num-10{background:#30c263 !important;text-align:left !important;letter-spacing:-2px;}
+      .num-7{background:#cfcfcf !important;}
+      .num-9{background:#7d0000 !important;}
+      .num-5{background:#4edef4 !important;}
+      .num-2{background:#2c93fc !important;}
+      .num-1{background:#f6d51b !important;}
+      .num-3{background:#535353 !important;}
+      .num-4{background:#f77514 !important;}
+  }
+  .bet-top{
+    .left-p{width:240px;
+      .qishu{margin-bottom:8px;}
+      .bet-num li{display:inline-block;width:20px;height:20px;line-height:20px;margin-right:3px;border-radius:3px; text-align:center;color:#fff;font-weight:bold;font-size:18px;
+      }
+      .tig{ text-align:center;margin-top:7px;
+        li{display:inline-block;width:20px;height:20px;line-height:18px;border-radius:3px;text-align:center;margin-right:3px ; font-size:15px;color:rgba(225,225,225,0.8);border:1px solid rgba(225,225,225,0.8);}
+      }
+    }
+    .right-p{
+      .qishu{margin-bottom:5px;  }
+    }
+  }
+  .xin-bet-box .rightBox .pour-box .vux-checker-item{
+    p{font-size:12px;
+        span{color:#333;width:22.5px;}
+        span.num{width:(45px)/2;height:(45px)/2;line-height:22px;border-radius:3px;border:none;color:#fff;box-shadow:none;margin-top:15px;border-radius:3px; text-align:center;color:#fff;font-weight:bold;font-size:18px;}
+    }
+  }
+
+}
+

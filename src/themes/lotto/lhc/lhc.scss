@@ -1,0 +1,23 @@
+//六合彩投注页：-
+$orange:#fa6200;
+.lhc-wrapper{
+  // 头部
+  .bet-top{
+    .left-p{width: 240px;
+      .bet-num{
+        .num{
+          span{width: 32px;height: 30px;display: inline-block;vertical-align: top;margin:0 2px 0 -3px;font-size:14px;
+            background:url(/static/cssImages/lotto/lhc/chip-red.png) right center no-repeat;background-size:28px;
+            text-align:center;line-height:25px;color:#000;
+          }
+        }
+
+      }
+      .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;floating: right;line-height:38px;}
+    }
+    .right-p{padding-right:0;margin-right:-10px;
+      .qishu{margin-bottom:5px;}
+    }
+  }
+
+}

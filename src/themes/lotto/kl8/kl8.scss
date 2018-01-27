@@ -1,0 +1,20 @@
+
+.kl8-wrapper{
+  .bet-top{padding:0;display:block;
+      .qishu{height:28px;line-height:28px;background:rgba(0,0,0,0.2);padding:0 7px;font-size:12px;width:100%;white-space:nowrap;}
+      .count-down{float:right;margin-top:6px;height:22px;
+        span{margin:2px 0 0 3px;height:14px;background-size:9px;width:9px;font-size:0;}
+        span.cd_dot{background-size:2.5px;width:4px;background-position:bottom center;margin:2px -1px 0 1px;}
+      }
+      .till{float:right;font-size:12px;
+          font{margin:0 2px 0 8px;}
+      }
+      .betnum{padding:7px 3px;
+          p{white-space:nowrap;display:flex;}
+          span{display:inline-block;flex:1 ;transform:scale(1,1.1);font-size:21px;font-weight:bold;line-height:30px;text-align:center;letter-spacing:-0.5px;
+              background:linear-gradient(#fff 22%, #fdcbb8 40%, #fff 58%, #fdc9b5 61%, #feeee8);-webkit-background-clip:text;-webkit-text-fill-color: transparent;
+          }
+      }
+  }
+
+}

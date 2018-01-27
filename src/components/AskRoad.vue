@@ -190,12 +190,12 @@ export default{
         }
   },
   watch: {   // prop属性的双向绑定
-    isShow (val) {
-      this.MyIshow = val
-    },
-    MyIshow (val) {
-      this.$emit('on-result-change', val)
-    }
+        isShow (val) {
+          this.MyIshow = val
+        },
+        MyIshow (val) {
+          this.$emit('on-result-change', val)
+        }
   }
 }
 </script>

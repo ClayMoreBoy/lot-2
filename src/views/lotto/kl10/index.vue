@@ -1,9 +1,9 @@
-<!--时时彩信用玩法-->
+<!--广东快乐 10  信用玩法-->
 <template>
-  <div class="xin-wrapper">
+  <div class="kl10-wrapper xin-wrapper">
     <x-header class="header" :left-options="{backText:''}">
       <div slot="default" class="topDropdown" @click="showDropdown">
-        <span class="betType">信</span><span class="t1">北京PK10</span>
+        <span class="betType">信</span><span class="t1">广东快乐10</span>
       </div>
       <div class="xiaozhushou" slot="right">
         <popover placement="bottom" style="position: relative;">
@@ -32,30 +32,31 @@
     <div class="content">
       <!--头部-->
       <div class="bet-top">
-        <div class="left-p">
-          <div class="qishu"><span class="l-name">北京PK10</span>第<span class="l-qs">20179984</span>期<router-link class="icon-ques1" to="/"></router-link></div>
-          <ul class="bet-num colorNum">
-            <li class="num-8">8</li><li class="num-6">6</li><li class="num-4">4</li><li class="num-10">10</li><li class="num-2">2</li><li class="num-7">7</li><li class="num-9">9</li><li class="num-3">3</li><li class="num-5">5</li><li class="num-1">1</li>
-          </ul>
-          <ul class="tig">
-            <li>14</li><li>双</li><li>大</li><li>龙</li><li>虎</li><li>龙</li><li>虎</li><li>龙</li>
-          </ul>
-        </div>
-        <div class="right-p">
-          <div class="qishu">第<span class="l-qs">232445</span>期</div>
-          <div>截止</div>
+        <div class="qishu">
+          <span class="l-name">广东快乐10 </span>第<span class="l-qs"> 179984 </span>期<router-link class="icon-ques1" to="/"></router-link>
           <div class="count-down">
+            <span class="cd_n0">0</span>
+            <span class="cd_n0">0</span>
+            <span class="cd_dot">:</span>
             <span class="cd_n0">0</span>
             <span class="cd_n8">8</span>
             <span class="cd_dot">:</span>
             <span class="cd_n2">2</span>
             <span class="cd_n0">0</span>
           </div>
-
-          <!--问路弹框：-->
-          <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
-          <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>
+          <p class="till">第<span class="l-qs"> 279984 </span>期<font>截 止</font></p>
         </div>
+        <div class="bet-num">
+          <span><font>1</font></span>
+          <span><font>20</font></span>
+          <span><font>3</font></span>
+          <span><font>14</font></span>
+          <span><font>5</font></span>
+          <span><font>16</font></span>
+          <span><font>7</font></span>
+          <span><font>12</font></span>
+        </div>
+        <p class="bet-res"><font>95</font><font>单</font> <font>大</font> </p>
       </div>
       <!--开奖记录-->
       <div class="bet-record">
@@ -138,32 +139,24 @@
         <div class="leftBox wrapper" ref="leftWrapper">
           <div class="content">
             <tab>
-              <tab-item selected><i></i>冠军</tab-item>
-              <tab-item ><i></i>亚军</tab-item>
-              <tab-item ><i></i>第三名</tab-item>
-              <tab-item ><i></i>第四名</tab-item>
+              <tab-item selected ><i></i>双面</tab-item>
+              <tab-item ><i></i>第一球</tab-item>
+              <tab-item ><i></i>第二球</tab-item>
             </tab>
           </div>
         </div>
         <div class="rightBox " ref="rightWrapper">
           <div class="content">
-            <div class="cont">
-              <div class="dingwei">千定位<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+            <div class="cont-1" >
+              <div class="dingwei">第一球<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
               <!--彩票内容区域：-->
-              <div class="pour-box colorNum">
+              <div class="pour-box">
                 <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                  <checker-item @on-item-click="isSelected" :value="1"><p><span class="num num-1">1</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="2"><p><span class="num num-2">2</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="3"><p><span class="num num-3">3</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="4"><p><span class="num num-4">4</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="5"><p><span class="num num-5">5</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="6"><p><span class="num num-6">6</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="7"><p><span class="num num-7">7</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="8"><p><span class="num num-8">8</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="9"><p><span class="num num-9">9</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="10"><p><span class="num num-10">10</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="99"><p><span>大</span>36</p><font class="top">36</font></checker-item>
-                  <checker-item @on-item-click="isSelected" :value="100"><p><span>小</span>36</p><font class="top">36</font></checker-item>
+                  <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                  <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                  <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                  <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                  <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
                 </checker>
               </div>
             </div>
@@ -463,6 +456,7 @@
   import AskRoad from '@/components/AskRoad'
   import BScroll from 'better-scroll'
   import Swiper from 'swiper'
+  import 'swiper/dist/css/swiper.min.css'
   import $ from 'jquery'
 
   export default {
@@ -560,7 +554,6 @@
 </script>
 <style lang="scss">
   @import '~themes/lotto/lottery';
-  @import '~themes/lotto/pk10/pk10';
-  @import '~themes/swiper/swiper.min';
+  @import '~themes/lotto/kl10/kl10';
 </style>
 

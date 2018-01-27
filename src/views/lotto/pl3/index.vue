@@ -1,9 +1,9 @@
-<!--时时彩信用玩法-->
+<!--体彩排列3信用玩法-->
 <template>
-  <div class="sscXin-wrapper xin-wrapper">
+  <div class=" xin-wrapper pl3-wrapper">
     <x-header class="header" :left-options="{backText:''}">
       <div slot="default" class="topDropdown" @click="showDropdown">
-        <span class="betType">信</span><span class="t1">重庆时时彩</span>
+        <span class="betType">信</span><span class="t1">体彩排列3</span>
       </div>
       <div class="xiaozhushou" slot="right">
         <popover placement="bottom" style="position: relative;">
@@ -33,18 +33,16 @@
         <!--头部-->
         <div class="bet-top">
           <div class="left-p">
-            <div class="qishu"><span class="l-name">重庆时时彩</span>第<span class="l-qs">20179984</span>期<router-link class="icon-ques1" to="/"></router-link></div>
+            <div class="qishu"><span class="l-name">体彩排列3</span>第<span class="l-qs">2017984</span>期<router-link class="icon-ques1" to="/"></router-link></div>
             <div class="bet-num">
                 <span><font>1</font></span>
                 <span><font>2</font></span>
                 <span><font>3</font></span>
-                <span><font>4</font></span>
-                <span><font>5</font></span>
             </div>
-            <p class="bet-tig">大 小 龙 虎</p>
+            <p class="bet-tig">11 单 小</p>
           </div>
           <div class="right-p">
-            <div class="qishu">第<span class="l-qs">23265445</span>期</div>
+            <div class="qishu">第<span class="l-qs">232655</span>期</div>
             <div>截止</div>
             <div class="count-down">
               <span class="cd_n0">0</span>
@@ -55,8 +53,8 @@
             </div>
 
             <!--问路弹框：-->
-            <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
-            <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>
+         <!--   <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
+            <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>   -->
           </div>
         </div>
         <!--开奖记录-->
@@ -140,16 +138,18 @@
             <div class="leftBox wrapper" ref="leftWrapper">
                 <div class="content">
                     <tab>
-                      <tab-item selected @on-item-click="onItemClick"><i></i>数字盘<font class="chip"></font></tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>双面</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>一字定位</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>二字定位</tab-item>
+                      <tab-item selected @on-item-click="onItemClick"><i></i>定位</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>组合</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>和数</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>组三</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>组六</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>跨度</tab-item>
                     </tab>
                 </div>
             </div>
             <div class="rightBox " ref="rightWrapper">
                 <div class="content">
-                    <div class="cont-1" v-if='activeTab == 0'>
+                    <div class="cont-1">
                         <button-tab>
                           <button-tab-item selected>万定位</button-tab-item>
                           <button-tab-item>千定位</button-tab-item>
@@ -161,110 +161,13 @@
                         <!--彩票内容区域：-->
                         <div class="pour-box">
                             <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                                <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="6"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="7"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="8"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="9"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="10"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="11"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="12"><p><span class="">大</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="13"><p><span class="">小</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="14"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="15"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                                <checker-item :value="16"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
+                                <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                                <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                                <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                                <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
+                                <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
                             </checker>
                         </div>
-                    </div>
-                    <div class="cont-2" v-else-if='activeTab == 1'>
-                      <div class="dingwei">千定位<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
-                      <!--彩票内容区域：-->
-                      <div class="pour-box">
-                        <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                          <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="6"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="7"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="8"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="9"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="10"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="11"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="12"><p><span class="">大</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="13"><p><span class="">小</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="14"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="15"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="16"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                        </checker>
-                      </div>
-                    </div>
-                    <div class="cont-3" v-else-if='activeTab == 2'>
-                      <button-tab>
-                        <button-tab-item selected>万定位</button-tab-item>
-                        <button-tab-item>千定位</button-tab-item>
-                        <button-tab-item>百定位</button-tab-item>
-                        <button-tab-item>十定位</button-tab-item>
-                        <button-tab-item>个定位</button-tab-item>
-                      </button-tab>
-                      <div class="dingwei">千定位<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
-                      <!--彩票内容区域：-->
-                      <div class="pour-box">
-                        <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                          <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="6"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="7"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="8"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="9"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="10"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="11"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="12"><p><span class="">大</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="13"><p><span class="">小</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="14"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="15"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="16"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                        </checker>
-                      </div>
-                    </div>
-                    <div class="cont-4" v-else-if='activeTab == 3'>
-                      <button-tab>
-                        <button-tab-item selected>万定位</button-tab-item>
-                        <button-tab-item>千定位</button-tab-item>
-                        <button-tab-item>百定位</button-tab-item>
-                        <button-tab-item>十定位</button-tab-item>
-                        <button-tab-item>个定位</button-tab-item>
-                      </button-tab>
-                      <div class="dingwei">千定位<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
-                      <!--彩票内容区域：-->
-                      <div class="pour-box">
-                        <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                          <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="6"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="7"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="8"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="9"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="10"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="11"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="12"><p><span class="">大</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="13"><p><span class="">小</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="14"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="15"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                          <checker-item :value="16"><p><span class="num">1</span>36</p><font class="top">36</font><font class="bot red">99999</font></checker-item>
-                        </checker>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -664,6 +567,6 @@
 </script>
 <style lang="scss">
   @import '~themes/lotto/lottery';
-  @import '~themes/lotto/ssc/ssc';
+  @import '~themes/lotto/pl3/pl3';
 </style>
 

@@ -24,9 +24,8 @@
 $orange:#fa6200;
 .sscXin-wrapper{
   // 头部
-  .bet-top{background:url(/static/cssImages/ssc/xinHeaderBg.jpg) no-repeat center/cover;
-    .left-p{width: 210px;position:relative;
-      &:after{display:block;width: 1px;height:(167px)/2;content:'';position:absolute;right:0;top:5px;background:rgba(225,225,225,0.2);}
+  .bet-top{
+    .left-p{width: 210px;
       .bet-num{
         span{width: (78px)/2;height: (70px)/2;display: inline-block;font-size: 0;vertical-align: top;margin:0 0 0 -3px;
           background:url(/static/cssImages/ssc/xin-num-bg.png) center no-repeat;background-size:35px;
@@ -37,13 +36,7 @@ $orange:#fa6200;
       }
       .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;}
     }
-    .right-p{padding-right:13px;position:relative;
-      .count-down span{margin:0 3px;}
-      .ask-road{position:absolute;width:25px;height:60px;text-align:center;font-size:15px;right:-10px;top:20px;padding-top:11px;
-        border:1px solid rgba(225,225,225,0.3);border-right:none;line-height:18px;border-top-left-radius:15px;border-bottom-left-radius:18px;}
-    }
   }
-
 
 }
 

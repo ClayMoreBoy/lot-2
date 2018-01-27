@@ -23,6 +23,10 @@ import Gxk3X from '@/views/lotto/k3/gxk3/xin/index'
 import Ahk3 from '@/views/lotto/k3/ahk3/index'
 import Ahk3G from '@/views/lotto/k3/ahk3/guan/index'
 import Ahk3X from '@/views/lotto/k3/ahk3/xin/index'
+import Kl8 from '@/views/lotto/kl8/index'
+import Kl10 from '@/views/lotto/kl10/index'
+import Pl3 from '@/views/lotto/pl3/index'
+import Lhc from '@/views/lotto/lhc/index'
 import Mine from '@/views/mine/index'
 import OnlineService from '@/views/mine/onlineservice/index'
 import PromoShow from '@/views/promo/PromoShow'
@@ -79,6 +83,26 @@ export default new Router({
           component: XjsscX
         }
       ]
+    },
+    { // 北京快乐8
+      path: '/lotto/kl8',
+      name: 'Kl8',
+      component: Kl8
+    },
+    { // 广东快乐10
+      path: '/lotto/kl10',
+      name: 'Kl10',
+      component: Kl10
+    },
+    { // 六合彩
+      path: '/lotto/lhc',
+      name: 'Lhc',
+      component: Lhc
+    },
+    { // 体彩排列3
+      path: '/lotto/pl3',
+      name: 'Pl3',
+      component: Pl3
     },
     { // 北京PK10路由
       path: '/lotto/pk10',
