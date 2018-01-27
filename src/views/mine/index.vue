@@ -105,7 +105,7 @@
         <div class="row3">
           <div class="r_w">
             <div class="row-item">
-              <router-link to="">
+              <router-link to="/mine/message">
                 <i class="icon icon-xxzx"></i>
                 <div class="txt-w">
                   <div class="t-g">消息中心</div>

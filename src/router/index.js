@@ -25,6 +25,10 @@ import Ahk3G from '@/views/lotto/k3/ahk3/guan/index'
 import Ahk3X from '@/views/lotto/k3/ahk3/xin/index'
 import Mine from '@/views/mine/index'
 import OnlineService from '@/views/mine/onlineservice/index'
+import Setting from '@/views/mine/setting/index'
+import UserAccount from '@/views/mine/setting/userAccount'
+import Message from '@/views/mine/message/index'
+import MessageDetail from '@/views/mine/message/detail'
 import PromoShow from '@/views/promo/PromoShow'
 import Announce from '@/views/help/Announce'
 import Instruction from '@/views/help/Instruction'
@@ -174,6 +178,26 @@ export default new Router({
       path: '/mine/OnlineService',
       name: 'OnlineService',
       component: OnlineService
+    },
+    { // 设置路由
+      path: '/mine/setting',
+      name: 'Setting',
+      component: Setting
+    },
+    { // 设置个人资料路由
+      path: '/mine/setting/userAccount',
+      name: 'UserAccount',
+      component: UserAccount
+    },
+    { // 消息路由
+      path: '/mine/message',
+      name: 'Message',
+      component: Message
+    },
+    { // 消息详情路由
+      path: '/mine/messageDetail',
+      name: 'MessageDetail',
+      component: MessageDetail
     },
     {
       path: '/promo/PromoShow',

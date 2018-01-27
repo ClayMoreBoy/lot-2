@@ -1,0 +1,52 @@
+// home-style
+// 头部字体颜色
+$themeColor:#fa6200;
+$topLinkColor:#fff;
+$headerBg:transparent linear-gradient(to right,#fc901c,#f64c01);
+.message-wrapper{height:100%;background: #f2f2f2;}
+.header{position: absolute;top: 0;left: 0;right: 0;z-index: 502;}
+.wrapper{position: absolute;top: 44px;bottom: 0;left: 0;right: 0;z-index: 2;}
+
+/*头部区域*/
+.message-wrapper{
+  .link-service{background: url("/static/cssImages/mine/icon-service.png") no-repeat center top/100%;width: (52px/2);height: (53px/2);display: inline-block;margin-top: -5px;}
+  .vux-tab{
+    &.header-tab{
+      width: (297px/2);height: 30px;margin: 6px auto 0;border-radius: 5px;    border: 1px solid #fff;
+      .vux-tab-ink-bar{display: none !important;}
+      .vux-tab-item{line-height: 30px;background: transparent;color: #fff;background: $themeColor;
+        &.vux-tab-selected{color: $themeColor;background: #fff;}
+        &:first-child{border-top-left-radius: 5px !important;border-bottom-left-radius: 5px !important;}
+        &:nth-child(2){border-top-right-radius: 5px !important;border-bottom-right-radius: 5px !important;}
+      }
+    }
+  }
+  .content-message{display: none;padding: 19px 10px;
+    &.active{display: block;}
+    .message-item{background: #fff;border: 1px solid #ddd;border-radius: 5px;margin-bottom: 15px;   overflow: visible;
+      .mes-hea{height: 35px;border-bottom: 1px solid #f2f2f2;font-size: 14px;color: #333;line-height: 35px;padding-left: 46px;background: url("/static/cssImages/mine/message/icon-ring.png") no-repeat 15px center /#{(45px/2)} auto;position: relative;
+        .tag{background: url("/static/cssImages/mine/message/icon-tag.png") no-repeat center top/100%;width: (96px/2);height: (52px/2);position: absolute;top: -4px;right: 14px;text-align: center;font-size: 9px;color: #fff;line-height: (52px/2);}
+      }
+      .mes-con{padding: 10px 69px 10px 20px;font-size: 12px;color: #333;text-indent: 2em;position: relative;display: block;
+        &:after{content: '';width: 8px;height: 8px;transform: rotateZ(-45deg);border-right: 1px solid #999;border-bottom: 1px solid #999;display: block;position: absolute;          right: 13px;          top: 50%;          margin-top: -6px;}
+        .ext-info{font-size: 9px;color: #999;text-align: right;}
+      }
+    }
+  }
+}
+/* 公告详情 */
+.message-detail-content{padding: 28px 10px;
+  .message-detail-item{background: #fff;border: 1px solid #ddd;border-radius: 5px;
+    .mes-det-hea{height: 60px;border-bottom: 1px solid #f2f2f2;padding: 10px 20px;    box-sizing: border-box;
+      .tit{padding-left: 33px;background: url("/static/cssImages/mine/message/icon-ring.png") no-repeat 0 center/#{(45px/2) auto};height: (45px/2);line-height:(45px/2);font-size: 14px;color: #333;}
+      .mes-time{font-size: 9px;color: #999;margin-top: 6px;}
+    }
+    .mes-det-con{padding: 25px 23px;font-size: 12px;color: #333;
+      p{text-indent: 2em;
+        &+p{margin-top: 30px;}
+      }
+    }
+  }
+}
+
+
