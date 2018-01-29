@@ -202,5 +202,5 @@ export default{
 
 
 <style lang="scss">
-	@import "~themes/trend/AskRoad"
+	@import "~themes/trend/askRoad"
 </style>
