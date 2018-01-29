@@ -215,7 +215,7 @@ $orange: #fa6200;
 }
 .betRecordTable{font-size: 14px;color: #333;
   &.vux-table{line-height: 35px;
-    .dot-line{position: absolute;    height: 100%;    width: 1px;    background: #999;   right: 0;
+    .dot-line{position: absolute;    height: 100%;    width: 1px;    background: #999;   right: 0;top:0;
       &:before{content: '';width: 7px;height: 7px;background: #999;border-radius: 50%;position: absolute;right: -3px;top: 50%;margin-top: -3.5px;}
     }
     td.le-2{letter-spacing: 2px;}
@@ -422,7 +422,11 @@ $orange: #fa6200;
       }
     }
 
-  .bet-record-switch{background:url("/static/cssImages/ssc/xin-result-close-bg.png") no-repeat center bottom/100% 10.5px;margin-bottom:0;}
+  .bet-record-switch{background:url("/static/cssImages/ssc/xin-result-close-bg.png") no-repeat center bottom/100% 10.5px;margin-bottom:0;
+    &.active{background:#e3f1fa url("/static/cssImages/ssc/xin-result-open-bg.png") no-repeat center/100% 10.5px;margin-bottom:0;
+      .arrow{top:6px;}
+    }
+  }
   .bet-data-switch-tab{height:38px;background:#e3f1fa;padding-top:5px;
     .data-switch-tab>.tab-btn.cur{border:1px solid $orange !important;}
     .data-switch-tab .tab-btn{border-color:#999 !important;}

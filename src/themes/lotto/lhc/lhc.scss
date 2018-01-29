@@ -1,23 +1,86 @@
 //六合彩投注页：-
 $orange:#fa6200;
 .lhc-wrapper{
+  //开奖结果 色球、（公共样式）：
+  span.chip-red{background:url(/static/cssImages/lotto/lhc/chip-red.png) right center no-repeat !important;}
+  span.chip-green{background:url(/static/cssImages/lotto/lhc/chip-green.png) right center no-repeat !important;}
+  span.chip-blue{background:url(/static/cssImages/lotto/lhc/chip-blue.png) right center no-repeat !important;}
+  .bet-num{
+    .num{
+      span{width: 32px;height: 30px;display: inline-block;vertical-align: top;margin:0 2px 0 -3px;font-size:14px;
+        text-align:center;line-height:25px;color:#000;background-size:28px !important;
+      }
+      .jia{font-size:25px;color:rgba(225,225,225,0.7);font-weight:bold;line-height:25px;margin-left:-3px;}
+    }
+    .word{padding-right:6px;
+      span{width:32px;display:inline-block;text-align:center;margin:0 2px 0 -3px;font-size:15px;}
+      .right{float:right;}
+    }
+  }
   // 头部
   .bet-top{
     .left-p{width: 240px;
-      .bet-num{
-        .num{
-          span{width: 32px;height: 30px;display: inline-block;vertical-align: top;margin:0 2px 0 -3px;font-size:14px;
-            background:url(/static/cssImages/lotto/lhc/chip-red.png) right center no-repeat;background-size:28px;
-            text-align:center;line-height:25px;color:#000;
-          }
-        }
-
-      }
-      .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;floating: right;line-height:38px;}
+      .qishu{margin-bottom:8px;}
     }
-    .right-p{padding-right:0;margin-right:-10px;
+    .right-p{
       .qishu{margin-bottom:5px;}
+      .count-down span{margin:0 0.5px 0 0;background-size: 10px !important;}
+      .count-down span.cd_dot{background-size: 3px !important;}
     }
   }
+  //开奖结果
+  .bet-record{background:#e6f2fb;
+    thead{background:linear-gradient(#e6f2fb,#e0f1fc);}
+    .col{width:90px;}
+    tbody{
+      tr{height:62px;}
+      tr:nth-child(odd){background: linear-gradient(#cad8e1,#bcd5e5);}
+      tr:nth-child(even){background: linear-gradient(#d1ebff,#cae3ff);}
+      .bet-num{
+        .jia{color:#7c8390;}
+        .num{height:33px;}
+        .word{padding-right:0;line-height:12px;
+          .last{margin-left:12px;padding-left:4px;}
+          span{font-size:12px;}
+        }
+      }
+    }
+    .table-tips{line-height:25px;}
+  }
+  .xin-bet-box{
+    .rightBox{
+      .vux-button-group>a{flex: inherit;padding:0 10px;margin-right:5px;width:auto;}
+      .pour-box .vux-checker-item{width:33.333%;
+        p{color:#666;padding-left:10px;
+          span.num{box-shadow:none;width:30px;height:27px;line-height:22px;font-size:14px;border:none;color:#333;margin-top:13px;margin-right:5px;background-size:28px !important;}
+        }
+      }
+      .pour-box .item-selected> p{color:#fff;}
+      //半波：
+      .banbo{
+        .pour-box{
+          .vux-checker-box{display:block;}
+          .vux-checker-item{width:100%;height:60px;line-height:60px;
+            .bet-num{float:right;height:60px;padding-right:10px;
+              span{vertical-align:middle;}
+            }
+            p{float:left;line-height:60px;
+              span{width:auto;}
+            }
+          }
+        }
+      }
+      //正码 1-6  ：
+      .zhengma-1-6{
+        .col-2-1{width:50%;
+          p{text-align:center;padding-right:15px;}
+        }
+        .col-3-1{width:33.333333%;}
+        .vux-checker-item{
+          p span{width:auto;color:#333;}
+        }
+      }
 
+    }
+  }
 }

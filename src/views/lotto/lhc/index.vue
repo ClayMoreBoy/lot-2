@@ -34,7 +34,7 @@
             <div class="qishu"><span class="l-name">六合彩</span>第<span class="l-qs">2017984</span>期<router-link class="icon-ques1" to="/"></router-link></div>
             <div class="bet-num">
                <div class="num">
-                 <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font>+</font><span class="chip-red">45</span>
+                 <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
                </div>
                <div class="word">
                   <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="right">牛</span>
@@ -50,11 +50,14 @@
               <span class="cd_dot">:</span>
               <span class="cd_n2">2</span>
               <span class="cd_n0">0</span>
+              <span class="cd_dot">:</span>
+              <span class="cd_n3">3</span>
+              <span class="cd_n5">5</span>
             </div>
 
             <!--问路弹框：-->
-         <!--   <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
-            <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>   -->
+            <ask-road :isShow="askRoadDialogShow" @on-result-change="onResultChangeAR" @dialogHandler="askRoadDialogShow = !askRoadDialogShow"></ask-road>
+            <p class="ask-road" @click='askRoadDialogShowHandler'>问路</p>
           </div>
         </div>
         <!--开奖记录-->
@@ -64,55 +67,65 @@
               <x-table class="betRecordTable" :cell-bordered="false" :content-bordered="false">
                 <thead>
                 <tr>
-                  <th>期号</th>
+                  <th class="col">期号</th>
                   <th>开奖结果</th>
-                  <th>十位</th>
-                  <th>个位</th>
-                  <th>形态</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
+                  <td class="bet-num">
+                      <div class="num">
+                        <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
+                      </div>
+                      <div class="word">
+                        <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="last">牛</span>
+                      </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
+                  <td class="bet-num">
+                    <div class="num">
+                      <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
+                    </div>
+                    <div class="word">
+                      <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="last">牛</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
+                  <td class="bet-num">
+                    <div class="num">
+                      <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
+                    </div>
+                    <div class="word">
+                      <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="last">牛</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
+                  <td class="bet-num">
+                    <div class="num">
+                      <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
+                    </div>
+                    <div class="word">
+                      <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="last">牛</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
-                </tr>
-                <tr>
-                  <td>68期 <span class="dot-line"></span></td>
-                  <td class="le-2">08<span class="theme-color">579</span></td>
-                  <td>大单</td>
-                  <td>大单</td>
-                  <td>组三</td>
+                  <td class="bet-num">
+                    <div class="num">
+                      <span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><span class="chip-red">35</span><span class="chip-green">28</span><span class="chip-blue">42</span><font class="jia">+</font><span class="chip-red">45</span>
+                    </div>
+                    <div class="word">
+                      <span>猪</span><span>马</span><span>龙</span><span>虎</span><span>羊</span><span>羊</span><span class="last">牛</span>
+                    </div>
+                  </td>
                 </tr>
                 </tbody>
               </x-table>
@@ -138,46 +151,134 @@
             <div class="leftBox wrapper" ref="leftWrapper">
                 <div class="content">
                     <tab>
-                      <tab-item selected @on-item-click="onItemClick"><i></i>定位</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>组合</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>和数</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>组三</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>组六</tab-item>
-                      <tab-item @on-item-click="onItemClick"><i></i>跨度</tab-item>
+                      <tab-item selected @on-item-click="onItemClick"><i></i>半波</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>特码</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>正码</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>正码特</tab-item>
+                      <tab-item @on-item-click="onItemClick"><i></i>正码1-6</tab-item>
                     </tab>
                 </div>
             </div>
             <div class="rightBox " ref="rightWrapper">
                 <div class="content">
-                    <div class="cont-1">
-                        <button-tab>
-                          <button-tab-item selected>万定位</button-tab-item>
-                          <button-tab-item>千定位</button-tab-item>
-                          <button-tab-item>百定位</button-tab-item>
-                          <button-tab-item>十定位</button-tab-item>
-                          <button-tab-item>个定位</button-tab-item>
-                        </button-tab>
-                        <div class="dingwei">千定位<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
-                        <!--彩票内容区域：-->
-                        <div class="pour-box">
-                            <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
-                                <checker-item @on-item-click="isSelected" :value="1"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="2"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="3"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="4"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="5"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="6"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="7"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="8"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="9"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="10"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="11"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="12"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="13"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                                <checker-item @on-item-click="isSelected" :value="14"><p><span class="num">1</span>36</p><font class="top">36</font></checker-item>
-                            </checker>
-                        </div>
+                  <!-- 半波：-->
+                  <div class="cont banbo" v-if='activeTab == 0'>
+                    <button-tab>
+                      <button-tab-item selected>全尾</button-tab-item>
+                      <button-tab-item>半尾</button-tab-item>
+                    </button-tab>
+                    <div class="dingwei">全尾<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+                    <!--彩票内容区域：-->
+                    <div class="pour-box">
+                      <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
+                        <checker-item @on-item-click="isSelected" :value="1">
+                          <p><span>0尾</span>36</p>
+                          <div class="bet-num">
+                            <div class="num">
+                              <span class="chip-red">35</span> <span class="chip-green">42</span><span class="chip-green">45</span><span class="chip-blue">45</span><span class="chip-blue">45</span>
+                            </div>
+                          </div>
+                          <font class="top">36</font>
+                        </checker-item>
+                        <checker-item @on-item-click="isSelected" :value="2">
+                          <p><span>1尾</span>36</p>
+                          <div class="bet-num">
+                            <div class="num">
+                              <span class="chip-red">35</span> <span class="chip-green">42</span><span class="chip-green">45</span><span class="chip-blue">45</span><span class="chip-blue">45</span>
+                            </div>
+                          </div>
+                          <font class="top">36</font>
+                        </checker-item>
+                      </checker>
                     </div>
+                  </div>
+                  <!-- 特码： -->
+                  <div class="cont tema" v-else-if='activeTab == 1'>
+                    <button-tab>
+                      <button-tab-item selected>特码A</button-tab-item>
+                      <button-tab-item>特码B</button-tab-item>
+                    </button-tab>
+                    <div class="dingwei">特码B<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+                    <!--彩票内容区域：-->
+                    <div class="pour-box">
+                      <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
+                        <checker-item @on-item-click="isSelected" :value="1"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="2"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="3"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="4"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="5"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="6"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="7"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="8"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="9"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="10"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="11"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="12"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                      </checker>
+                    </div>
+                  </div>
+                  <!-- 正吗：-->
+                  <div class="cont zhengma" v-else-if='activeTab == 2'>
+                    <button-tab>
+                      <button-tab-item selected>正码A</button-tab-item>
+                      <button-tab-item>正码B</button-tab-item>
+                    </button-tab>
+                    <div class="dingwei">正码B<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+                    <!--彩票内容区域：-->
+                    <div class="pour-box">
+                      <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
+                        <checker-item @on-item-click="isSelected" :value="1"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="2"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="3"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="4"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="5"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="6"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="7"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="8"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                      </checker>
+                    </div>
+                  </div>
+                  <!--  正特码 ： -->
+                  <div class="cont zhengtama" v-else-if='activeTab == 3'>
+                    <button-tab>
+                      <button-tab-item selected>正特码A</button-tab-item>
+                      <button-tab-item>正特码B</button-tab-item>
+                    </button-tab>
+                    <div class="dingwei">正特码B<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+                    <!--彩票内容区域：-->
+                    <div class="pour-box">
+                      <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
+                        <checker-item @on-item-click="isSelected" :value="1"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="2"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="3"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="4"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="5"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="6"><p><span class="num chip-blue">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="7"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="8"><p><span class="num chip-red">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="9"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item @on-item-click="isSelected" :value="10"><p><span class="num chip-green">1</span>36</p><font class="top">36</font></checker-item>
+                      </checker>
+                    </div>
+                  </div>
+                  <!-- 正码 1-6 -->
+                  <div class="cont zhengma-1-6" v-else-if='activeTab == 4'>
+                    <div class="dingwei">特码一<i class="icon-bet-help" @click="betHelpDialogHandler"></i></div>
+                    <!--彩票内容区域：-->
+                    <div class="pour-box">
+                      <checker type="checkbox" default-item-class="item" selected-item-class="item-selected" id="betCheck">
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="1"><p><span>单</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="2"><p><span>双</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="3"><p><span>大</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="4"><p><span>小</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="5"><p><span>尾大</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-2-1" @on-item-click="isSelected" :value="6"><p><span>尾小</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-3-1" @on-item-click="isSelected" :value="7"><p><span>红波</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-3-1" @on-item-click="isSelected" :value="8"><p><span>蓝波</span>36</p><font class="top">36</font></checker-item>
+                        <checker-item class="col-3-1" @on-item-click="isSelected" :value="9"><p><span>绿波</span>36</p><font class="top">36</font></checker-item>
+                      </checker>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

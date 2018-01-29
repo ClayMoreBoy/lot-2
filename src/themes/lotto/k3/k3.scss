@@ -35,6 +35,31 @@
      }
      .right-p .qishu{margin-bottom:5px;}
    }
+  .xin-bet-box{
+    span.chip-1{background:url(/static/cssImages/lotto/k3/chip-1.png) center no-repeat;}
+    span.chip-2{background:url(/static/cssImages/lotto/k3/chip-2.png) center no-repeat;}
+    span.chip-3{background:url(/static/cssImages/lotto/k3/chip-3.png) center no-repeat;}
+    span.chip-4{background:url(/static/cssImages/lotto/k3/chip-4.png) center no-repeat;}
+    span.chip-5{background:url(/static/cssImages/lotto/k3/chip-5.png) center no-repeat;}
+    span.chip-6{background:url(/static/cssImages/lotto/k3/chip-6.png) center no-repeat;}
+    .rightBox .pour-box .vux-checker-item p{font-size:12px;}
+    //三军：
+    .sanjun{
+      .pour-box .vux-checker-item{
+        p span{font-size:0;background-size:30px;vertical-align:middle;}
+      }
+    }
+    //选三：
+    .xuansan{
+      .pour-box .vux-checker-item{
+        p{line-height: normal;text-align:center;padding: 7px 0 0 0;
+          span{font-size:0;background-size:30px;vertical-align:top;margin:0;}
+          font{display:block;line-height:12px;text-align:center;}
+        }
+      }
+    }
+
+  }
 
 }
 //---------------------------------------j江苏快3 信用玩法 End----------------------------------------------------------------------

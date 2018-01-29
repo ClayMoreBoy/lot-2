@@ -64,55 +64,34 @@
             <x-table class="betRecordTable" :cell-bordered="false" :content-bordered="false">
               <thead>
               <tr>
-                <th>期号</th>
+                <th class="col">期号</th>
                 <th>开奖结果</th>
-                <th>十位</th>
-                <th>个位</th>
-                <th>形态</th>
               </tr>
               </thead>
               <tbody>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               <tr>
                 <td>68期 <span class="dot-line"></span></td>
-                <td class="le-2">08<span class="theme-color">579</span></td>
-                <td>大单</td>
-                <td>大单</td>
-                <td>组三</td>
+                <td><p>01,02,03,05,09,10,07,02,08,04</p><p>12,单,大,龙,龙,龙,虎,虎</p></td>
               </tr>
               </tbody>
             </x-table>

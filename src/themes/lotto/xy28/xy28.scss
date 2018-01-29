@@ -1,0 +1,39 @@
+//幸运 28
+$orange:#fa6200;
+
+// 投注区域头部
+.bet-top{
+  .left-p{
+    .bet-num{
+      span{width: (89px)/2;height: (88px)/2;display: inline-block;font-size: 0;vertical-align: top;margin-left: -3px;      margin-right: 3px;
+        &.ssc_n1{background: url("/static/cssImages/ssc/ssc-num1.png") center /100%;}
+        &.ssc_n2{background: url("/static/cssImages/ssc/ssc-num2.png") center /100%;}
+        &.ssc_n3{background: url("/static/cssImages/ssc/ssc-num3.png") center /100%;}
+        &.ssc_n4{background: url("/static/cssImages/ssc/ssc-num4.png") center /100%;}
+        &.ssc_n5{background: url("/static/cssImages/ssc/ssc-num5.png") center /100%;}
+        &.ssc_n6{background: url("/static/cssImages/ssc/ssc-num6.png") center /100%;}
+        &.ssc_n7{background: url("/static/cssImages/ssc/ssc-num7.png") center /100%;}
+        &.ssc_n8{background: url("/static/cssImages/ssc/ssc-num8.png") center /100%;}
+        &.ssc_n9{background: url("/static/cssImages/ssc/ssc-num9.png") center /100%;}
+      }
+    }
+  }
+}
+.xy28-wrapper{
+  // 头部
+  .bet-top{
+    .left-p{width: 230px;
+      .bet-num{
+        span{width: (72px)/2;height: (70px)/2;display: inline-block;font-size: 0;vertical-align: top;margin:0 0 0 -3px;
+          background:url(/static/cssImages/ssc/xin-num-bg.png) center no-repeat;background-size:35px;
+          font-family: "Helvetica Neue LT Pro";text-align:center;line-height:35px;
+          font{background-image: linear-gradient(#fff,#fdcab6, #fff, #fdcab6,#fff); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;font-size: 25px;font-weight:bold;}
+        }
+        b{font-size:26px;color:rgba(225,225,225,0.6);margin:0 0 0 -2px;line-height:30px;}
+      }
+      .bet-tig{font-size:15px;text-align:center;letter-spacing:2px;}
+    }
+    .right-p{padding:0;}
+  }
+}

@@ -26,6 +26,7 @@ import Ahk3X from '@/views/lotto/k3/ahk3/xin/index'
 import Kl8 from '@/views/lotto/kl8/index'
 import Kl10 from '@/views/lotto/kl10/index'
 import Pl3 from '@/views/lotto/pl3/index'
+import Xy28 from '@/views/lotto/xy28/index'
 import Lhc from '@/views/lotto/lhc/index'
 import Mine from '@/views/mine/index'
 import OnlineService from '@/views/mine/onlineservice/index'
@@ -107,6 +108,11 @@ export default new Router({
       path: '/lotto/pl3',
       name: 'Pl3',
       component: Pl3
+    },
+    { // 幸运28
+      path: '/lotto/xy28',
+      name: 'xy28',
+      component: Xy28
     },
     { // 北京PK10路由
       path: '/lotto/pk10',

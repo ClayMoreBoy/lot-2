@@ -37,6 +37,27 @@
       .num-3{background:#535353 !important;}
       .num-4{background:#f77514 !important;}
   }
+  //开奖结果
+  .bet-record{background:#e6f2fb;
+    thead{background:linear-gradient(#e6f2fb,#e0f1fc);}
+    .col{width:120px;}
+    tbody{
+      tr{height:62px;}
+      tr:nth-child(odd){background: linear-gradient(#cad8e1,#bcd5e5);}
+      tr:nth-child(even){background: linear-gradient(#d1ebff,#cae3ff);}
+      .bet-num{
+        .jia{color:#7c8390;}
+        .num{height:33px;}
+        .word{padding-right:0;line-height:12px;
+          .last{margin-left:12px;padding-left:4px;}
+          span{font-size:12px;}
+        }
+      }
+      td p{letter-spacing:1px;line-height:22px;}
+    }
+    .table-tips{line-height:30px;}
+  }
+
   .bet-top{
     .left-p{width:240px;
       .qishu{margin-bottom:8px;}
