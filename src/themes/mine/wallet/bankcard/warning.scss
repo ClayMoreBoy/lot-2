@@ -1,0 +1,8 @@
+//绑定银行卡提示
+$orange: #fa6200;
+$orange-2: #f46f1a;
+.warning-wrapper{text-align:center;
+  .bag{width:(267px)/2;margin-top:50px;}
+  p{font-size:14px;color:#333;line-height:50px;margin-bottom:25px;}
+  .bind{color:#f2f2f2;background:$orange-2;text-align:center;line-height:40px;height:40px;margin: 0 10px;display:block;border-radius:5px;}
+}

@@ -32,6 +32,12 @@ import Mine from '@/views/mine/index'
 import OnlineService from '@/views/mine/onlineservice/index'
 import Setting from '@/views/mine/setting/index'
 import UserAccount from '@/views/mine/setting/userAccount'
+import SecurityCenter from '@/views/mine/setting/securityCenter'
+import Recharge from '@/views/mine/wallet/recharge'
+import Amount from '@/views/mine/wallet/recharge/amount'
+import Bankcard from '@/views/mine/wallet/bankcard/index'
+import AddBankcard from '@/views/mine/wallet/bankcard/addBankcard'
+import Warning from '@/views/mine/wallet/bankcard/warning'
 import Message from '@/views/mine/message/index'
 import MessageDetail from '@/views/mine/message/detail'
 import PromoShow from '@/views/promo/PromoShow'
@@ -204,6 +210,31 @@ export default new Router({
       name: 'Mine',
       component: Mine
     },
+    { // 钱包、支付
+      path: '/mine/wallet/recharge',
+      name: 'Recharge',
+      component: Recharge
+    },
+    { // 支付金额
+      path: '/mine/wallet/amount',
+      name: 'Amount',
+      component: Amount
+    },
+    { // 银行卡
+      path: '/mine/wallet/bankcard',
+      name: 'Bankcard',
+      component: Bankcard
+    },
+    { // 添加银行卡
+      path: '/mine/wallet/addBankcard',
+      name: 'AddBankcard',
+      component: AddBankcard
+    },
+    { // 未绑定银行卡提示
+      path: '/mine/wallet/warning',
+      name: 'Warning',
+      component: Warning
+    },
     { // 在线客服路由
       path: '/mine/OnlineService',
       name: 'OnlineService',
@@ -218,6 +249,11 @@ export default new Router({
       path: '/mine/setting/userAccount',
       name: 'UserAccount',
       component: UserAccount
+    },
+    { // 安全中心
+      path: '/mine/setting/securityCenter',
+      name: 'SecurityCenter',
+      component: SecurityCenter
     },
     { // 消息路由
       path: '/mine/message',
