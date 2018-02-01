@@ -36,9 +36,11 @@ import SecurityCenter from '@/views/mine/setting/securityCenter'
 import Recharge from '@/views/mine/wallet/recharge'
 import Amount from '@/views/mine/wallet/recharge/amount'
 import Bankcard from '@/views/mine/wallet/bankcard/index'
+import verifyCard from '@/views/mine/wallet/bankcard/verifyCard'
 import AddBankcard from '@/views/mine/wallet/bankcard/addBankcard'
 import Warning from '@/views/mine/wallet/bankcard/warning'
 import Message from '@/views/mine/message/index'
+import Share from '@/views/mine/share/index'
 import MessageDetail from '@/views/mine/message/detail'
 import PromoShow from '@/views/promo/PromoShow'
 import Announce from '@/views/help/Announce'
@@ -210,6 +212,11 @@ export default new Router({
       name: 'Mine',
       component: Mine
     },
+    {
+      path: '/mine/share',
+      name: 'Share',
+      component: Share
+    },
     { // 钱包、支付
       path: '/mine/wallet/recharge',
       name: 'Recharge',
@@ -229,6 +236,11 @@ export default new Router({
       path: '/mine/wallet/addBankcard',
       name: 'AddBankcard',
       component: AddBankcard
+    },
+    { // 认证银行卡
+      path: '/mine/wallet/verifyCard',
+      name: 'verifyCard',
+      component: verifyCard
     },
     { // 未绑定银行卡提示
       path: '/mine/wallet/warning',

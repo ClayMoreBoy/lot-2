@@ -1,6 +1,7 @@
 //银行卡
 $orange: #fa6200;
-
+*{box-sizing:border-box;}
+ul,li{list-style:none;}
 body{background:#efefef;}
 .bankcard-wrapper{
   .card{margin:25px 10px;border:1px solid #ddd;background:#fff;height:(215px)/2;border-radius:10px;display:flex;
@@ -17,8 +18,92 @@ body{background:#efefef;}
     .off{width:(176px)/2;height:44px;line-height:44px;color:#fff;font-size:14px;text-align:center ;float:right;margin:30px 20px 0 0;background:$orange;border:none;border-radius:5px;}
   }
 
-  .addcard{height:45px;line-height:45px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fff;font-size:14px;
+  .addcard{height:45px;line-height:42px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fff;font-size:14px;
     a{color:#333;}
     span{border:1px dashed $orange;border-radius:5px;display:inline-block;height:25px;width:25px;margin:0 10px ;text-align:center;line-height:20px;font-size:34px;color:$orange;vertical-align:middle;}
   }
+}
+
+//添加银行卡：
+.addcard-wrapper{
+  .content{padding:10px;
+
+    .infobox{background:#fff;border-radius:8px;padding:0 18px;margin-top:5px;
+      h1{font-size:12px;color:$orange;border-bottom:1px solid #f2f2f2;height:45px;line-height:45px;font-weight:normal;}
+      .box{overflow:hidden;}
+      .choose{font-size:14px;color:#333;margin-top:17px;height:30px;line-height:30px;display:flex;
+        span{display:inline-block;width:70px;}
+        p{flex:1;background:#eee;border-radius:5px;padding-left:10px;position:relative;
+          &:after{position:absolute;right:8px;top:12px;border-radius:3px;border-width:8px;border-style: solid;border-color: #999 transparent transparent transparent;content:'';}
+          img{height:16px;vertical-align:middle;}
+          .vux-x-switch{left:0;right:0;top:-30px;bottom:0;height:30px;
+            .weui-cell__ft{position: initial;}
+            input{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;opacity:0;}
+          }
+        }
+      }
+      .weui-cells{margin:0 0 20px 0;
+        &:before{display:none;}
+        &:after{display:none;}
+      }
+      .weui-cell{padding:17px 0 0 0;
+        &:before{display:none;}
+        .weui-label{font-size:14px;color:#333;display:inline-block;width:70px !important;}
+        .weui-input{background:#eee;border-radius:5px;padding-left:10px;font-size:12px;color:#999;height:30px;line-height:30px;width:100%;}
+      }
+    }
+    .warning{margin-top:100px;}
+  }
+  //银行列表弹框：
+  .banklist{
+    .weui-dialog{overflow:inherit;height:400px;background:#fff;max-width:100%;width:100%;top:auto;bottom:0;position:relative;}
+    .wrapper{height:400px;overflow:hidden;top:0;
+      .content{padding-right:0;}
+    }
+    .list{
+     li{margin-left:10px;height:45px;line-height:45px;font-size:14px;color:#000;text-align:left;border-bottom:1px solid #f2f2f2;}
+      img{margin-right:10px;vertical-align:middle;height:20px;}
+    }
+  }
+  //确认绑定弹框：
+  .confirmBox{
+    .weui-dialog{background:linear-gradient(#fcd7c7, #fff 40%);border-radius:7px;}
+    .weui-dialog__title{font-size:17px;color:$orange;font-weight:bold;}
+    .weui-dialog__bd{padding-bottom:1.2em;
+      p{font-size:14px;color:#333;line-height:22px;letter-spacing:1px;}
+    }
+    .weui-dialog__ft .weui-dialog__btn{font-size:17px;}
+    .weui-dialog__btn_primary{color:$orange;}
+  }
+  //绑定成功弹框：
+  .successBox{
+    .weui-dialog{width:315px;height:315px;background:url(/static/cssImages/mine/success-bg.png) no-repeat center /100%;
+      .txt{margin:160px auto 0;font-size:14px;}
+      .close{position:absolute;bottom:10px;height:40px;width:40px;left:50%;margin-left:-20px;}
+    }
+  }
+
+}
+
+
+//认证银行卡：
+.verifyCard-wrapper{
+  .card{padding:0 10px 25px;background:#fff;
+    h1{color:#333;font-size:14px;font-weight:normal;line-height:55px;}
+    .box{padding:15px 20px 0;background:#efefef;height:(215px)/2;border:1px solid #ddd;border-radius:10px;margin:0 25px;
+      .top{overflow:hidden;margin-bottom:17px;
+        img{float:left;width:(45px)/2;height:(45px)/2;margin-right:8px;}
+        p{font-size:12px;color:#333;float:left;line-height:12px;
+          font{font-size:9px;display:block;}
+        }
+        .name{font-size:14px;color:#333;float:right;margin-right:5px;}
+      }
+      .num{font-size:(37px)/2;}
+    }
+  }
+  .btn-box{padding:5px 10px;
+    .next{background:$orange;}
+    .change{background:#999;margin-top:15px;}
+  }
+  .warning{margin-top:100px;padding:0 10px;}
 }

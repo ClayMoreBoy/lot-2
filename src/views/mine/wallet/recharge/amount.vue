@@ -6,7 +6,7 @@
       {{title}}
     </x-header>
     <!--第三方滑动内容块-->
-    <div class="wrapper pay-list" ref="wrapper">
+    <div class="wrapper" ref="wrapper">
       <div class="content">
         <!-- 支付渠道： -->
         <div class="way">
@@ -57,7 +57,7 @@
     },
     data () {
       return {
-        title: '充值'
+        title: '充值金额'
       }
     },
     methods: {
@@ -71,5 +71,6 @@
 </script>
 
 <style lang="scss">
+  @import '~themes/mine/mine';
   @import '~themes/mine/wallet/recharge/recharge'
 </style>

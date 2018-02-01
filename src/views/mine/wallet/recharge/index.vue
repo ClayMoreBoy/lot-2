@@ -28,9 +28,9 @@
         title: '充值',
         type: '1',
         payList: [
-          { src: '/static/cssImages/mine/wallet/pay-wechat.png', title: '微信支付', desc: '跳转到微信支付，快速到帐' },
-          { src: '/static/cssImages/mine/wallet/pay-zhifubao.png', title: '支付宝', desc: '跳转到支付宝支付，快速到帐' },
-          { src: '/static/cssImages/mine/wallet/pay-qq-wallet.png', title: 'QQ钱包', desc: '跳转到QQ钱包支付，快速到帐' }
+          { src: '/static/images/mine/pay-wechat.png', title: '微信支付', desc: '跳转到微信支付，快速到帐' },
+          { src: '/static/images/mine/pay-zhifubao.png', title: '支付宝', desc: '跳转到支付宝支付，快速到帐' },
+          { src: '/static/images/mine/pay-qq-wallet.png', title: 'QQ钱包', desc: '跳转到QQ钱包支付，快速到帐' }
         ]
       }
     },
