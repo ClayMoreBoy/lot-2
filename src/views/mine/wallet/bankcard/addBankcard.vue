@@ -90,6 +90,7 @@
         showBanklist: false,
         confirmDialog: false,
         successDialog: false,
+        a: true,
         bank: [
           { value: '工商银行', imgSrc: 'http://dn-placeholder.qbox.me/110x110/FF2D55/000' },
           { value: '中国银行', imgSrc: 'http://dn-placeholder.qbox.me/110x110/FF2D55/000' },
@@ -107,10 +108,14 @@
       }
 
     },
+    watch:{
+      showBanklist: function (nV,oV) {
+        if(nV){
+          this.scroll = new BScroll(this.$refs.wrapper, {})
+        }
+      }
+    },
     mounted () {
-      this.$nextTick(() => {
-        this.scroll = new BScroll(this.$refs.wrapper, {})
-      })
     }
   }
 </script>
