@@ -56,9 +56,20 @@ body{background:#efefef;}
   }
   //银行列表弹框：
   .banklist{
-    .weui-dialog{overflow:inherit;height:600px;background:#fff;max-width:100%;width:100%;position:absolute;}
-    .wrapper{overflow:hidden;top:100px;border:1px solid red;position:absolute;bottom:150px;
-      .content{padding-right:0;}
+    .weui-dialog{    position: fixed;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: auto;height: 300px;    border-radius: 0;
+      bottom: 0;
+      transform: none;width: 100%;max-width: 100%;transition: none;background: transparent;}
+    .wrapper{    overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      background: #fff;
+      top: auto;
+      height: 300px;
+      .content{padding:0;}
     }
     .list{
      li{margin-left:10px;height:45px;line-height:45px;font-size:14px;color:#000;text-align:left;border-bottom:1px solid #f2f2f2;}
