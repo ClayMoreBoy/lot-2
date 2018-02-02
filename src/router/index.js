@@ -41,6 +41,7 @@ import AddBankcard from '@/views/mine/wallet/bankcard/addBankcard'
 import Warning from '@/views/mine/wallet/bankcard/warning'
 import Message from '@/views/mine/message/index'
 import Share from '@/views/mine/share/index'
+import SetPassword from '@/views/mine/safe/setPassword'
 import MessageDetail from '@/views/mine/message/detail'
 import PromoShow from '@/views/promo/PromoShow'
 import Announce from '@/views/help/Announce'
@@ -256,6 +257,11 @@ export default new Router({
       path: '/mine/setting',
       name: 'Setting',
       component: Setting
+    },
+    { // 设置资金密码
+      path: '/mine/safe/setPassword',
+      name: 'SetPassword',
+      component: SetPassword
     },
     { // 设置个人资料路由
       path: '/mine/setting/userAccount',

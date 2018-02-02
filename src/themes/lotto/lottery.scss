@@ -37,7 +37,8 @@ $orange: #fa6200;
               &.icon-linep3{background: url("/static/cssImages/lotto/xiaozhushou/icon-linep3.png") no-repeat center / #{(47px/2)};}
             }
           }
-          .vux-x-switch{display: inline-block;line-height: 1;vertical-align: top;margin-top: 8px;
+          .vux-x-switch{display: inline-block;line-height: 1;vertical-align: top;margin-top: 8px;padding:6px 0;
+            &:before{display:none;}
             .weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box{    border-color:$themeColor;  background-color: $themeColor;}
             .weui-switch, .weui-switch-cp__box {width: 35px;height: 17px;border-radius: 8.5px;}
             .weui-switch:after, .weui-switch-cp__box:after {width: 15px; height: 15px; border-radius: 8px;}

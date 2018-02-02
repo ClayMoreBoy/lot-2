@@ -662,7 +662,7 @@
     }
   }
 </script>
-<style lang="scss">
+<style lang="scss" scope>
   @import '~themes/lotto/lottery';
   @import '~themes/lotto/ssc/ssc';
 </style>
